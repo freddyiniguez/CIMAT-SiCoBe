@@ -32,25 +32,14 @@
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-<h2 class="title">Alta de encargado</h2>
-    <form class="form-horizontal">
-<!-- Select Basic -->
-<div class="control-group">
-  <label class="control-label" for="selectbasic">Dependencia</label>
-  <div class="controls">
-    <select id="selectbasic" name="selectbasic" class="input-large">
-      <option>Seleccionar dependencia</option>
-      <option>Dependencia 1</option>
-      <option>Dependencia 2</option>
-    </select>
-  </div>
-</div>
+<h2 class="title">Alta de organización</h2>
 
+<form class="form-horizontal">
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtEmpleado">No. de Empleado</label>
+  <label class="control-label" for="txtRFC">RFC</label>
   <div class="controls">
-    <input id="txtEmpleado" name="txtEmpleado" type="text" placeholder="" class="input-medium" required="">
+    <input id="txtRFC" name="txtRFC" type="text" placeholder="" class="input-medium" required="">
     
   </div>
 </div>
@@ -66,40 +55,19 @@
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtApellidos">Apellidos</label>
+  <label class="control-label" for="txtDomicilio">Domicilio</label>
   <div class="controls">
-    <input id="txtApellidos" name="txtApellidos" type="text" placeholder="" class="input-large" required="">
+    <input id="txtDomicilio" name="txtDomicilio" type="text" placeholder="" class="input-large" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtRFC">RFC</label>
+  <label class="control-label" for="txtTitular">Nombre del titular</label>
   <div class="controls">
-    <input id="txtRFC" name="txtRFC" type="text" placeholder="" class="input-large" required="">
+    <input id="txtTitular" name="txtTitular" type="text" placeholder="" class="input-large" required="">
     
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="txtCURP">CURP</label>
-  <div class="controls">
-    <input id="txtCURP" name="txtCURP" type="text" placeholder="" class="input-large" required="">
-    
-  </div>
-</div>
-
-<!-- Select Basic -->
-<div class="control-group">
-  <label class="control-label" for="selSex">Sexo</label>
-  <div class="controls">
-    <select id="selSex" name="selSex" class="input-medium">
-      <option>Masculino</option>
-      <option>Femenino</option>
-      <option>Prefiero no especificar</option>
-    </select>
   </div>
 </div>
 
@@ -114,10 +82,21 @@
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtEmail">Correo Electrónico</label>
+  <label class="control-label" for="txtEmail">Correo electrónico</label>
   <div class="controls">
-    <input id="txtEmail" name="txtEmail" type="text" placeholder="" class="input-large" required="">
+    <input id="txtEmail" name="txtEmail" type="text" placeholder="" class="input-medium" required="">
     
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="control-group">
+  <label class="control-label" for="selEstado">Estado</label>
+  <div class="controls">
+    <select id="selEstado" name="selEstado" class="input-medium">
+      <option>Activo</option>
+      <option>Vetado</option>
+    </select>
   </div>
 </div>
 
@@ -125,11 +104,12 @@
 <div class="control-group">
   <label class="control-label" for="btnAceptar"></label>
   <div class="controls">
-    <button id="btnAceptar" name="btnAceptar" class="btn btn-success">Aceptar</button>
+    <button id="btnAceptar" name="btnAceptar" class="btn btn-success">Registrar</button>
     <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>
 </form>
+
 </div>
 </div>
 <div class="right-panel">
