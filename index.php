@@ -17,10 +17,10 @@
 <div class="menu">
 <ul>
   <li class="item_selected"><a href="#">Home</a></li>
-  <li><a href="view/dependencias.html">Dependencias</a></li>
-  <li><a href="view/programas.html">Programas</a></li>
-  <li><a href="view/beneficiarios.html">Beneficiarios</a></li>
-  <li><a href="view/about.html">Acerca de</a></li>
+  <li><a href="view/dependencias.php">Dependencias</a></li>
+  <li><a href="view/programas.php">Programas</a></li>
+  <li><a href="view/beneficiarios.php">Beneficiarios</a></li>
+  <li><a href="view/about.php">Acerca de</a></li>
 </ul>
 </div>
 </div>

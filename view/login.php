@@ -16,11 +16,11 @@
 </div>
 <div class="menu">
 <ul>
-  <li><a href="../index.html">Home</a></li>
-  <li><a href="dependencias.html">Dependencias</a></li>
+  <li><a href="../index.php">Home</a></li>
+  <li><a href="dependencias.php">Dependencias</a></li>
   <li class="item_selected"><a href="#">Programas</a></li>
-  <li><a href="beneficiarios.html">Beneficiarios</a></li>
-  <li><a href="about.html">Acerca de</a></li>
+  <li><a href="beneficiarios.php">Beneficiarios</a></li>
+  <li><a href="about.php">Acerca de</a></li>
 </ul>
 </div>
 </div>
