@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>SiCoBe</title>
   <meta name="description" content="Sistema de Control de Beneficiarios para mejorar el control de los recursos asignados.">
-  <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="main">
@@ -16,11 +16,11 @@
 </div>
 <div class="menu">
 <ul>
-  <li><a href="../index.html">Home</a></li>
-  <li><a href="dependencias.html">Dependencias</a></li>
-  <li class="item_selected"><a href="#">Programas</a></li>
-  <li><a href="beneficiarios.html">Beneficiarios</a></li>
-  <li><a href="about.html">Acerca de</a></li>
+  <li class="item_selected"><a href="#">Home</a></li>
+  <li><a href="view/dependencias.php">Dependencias</a></li>
+  <li><a href="view/programas.php">Programas</a></li>
+  <li><a href="view/beneficiarios.php">Beneficiarios</a></li>
+  <li><a href="view/about.php">Acerca de</a></li>
 </ul>
 </div>
 </div>
