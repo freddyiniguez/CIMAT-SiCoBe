@@ -5,6 +5,10 @@
   <title>SiCoBe</title>
   <meta name="description" content="Sistema de Control de Beneficiarios para mejorar el control de los recursos asignados.">
   <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="main">
