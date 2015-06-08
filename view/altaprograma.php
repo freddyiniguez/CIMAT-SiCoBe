@@ -16,16 +16,35 @@
 <div class="header">
 <div class="header-img">
 </div>
-<div class="menu">
-<ul>
-  <li><a href="../index.php">Home</a></li>
-  <li><a href="dependencias.php">Dependencias</a></li>
-  <li><a href="programas.php">Programas</a></li>
-  <li class="item_selected"><a href="#">Beneficiarios</a></li>
-  <li><a href="about.php">Acerca de</a></li>
-</ul>
-</div>
-</div>
+<nav>
+    <ul>
+      <li><a href="../index.php">Home</a></li>
+      <li>
+        <a href="#">Dependencias</a>
+        <ul class="fallback">
+          <li><a href="altadependencia.php">Agregar</a></li>
+          <li><a href="modificardependencia.php">Editar</a></li>
+          <li><a href="consultardependencia.php">Mostrar</a></li>
+        </ul>
+      </li>
+    <li  class="item_selected">
+      <a href="#">Programas</a>
+      <ul class="fallback">
+        <li><a href="altaprograma.php">Agregar</a></li>
+        <li><a href="consultarprograma.php">Consultar</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Beneficiarios</a>
+      <ul class="fallback">
+        <li><a href="altabeneficiario.php">Agregar</a></li>
+        <li><a href="buscarbeneficiario.php">Buscar</a></li>
+        <li><a href="historialbeneficiario.php">Historial</a></li>
+      </ul>
+    </li>
+    <li><a href="about.php">Acerca de</a></li>
+    </ul>
+  </nav></div>
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
