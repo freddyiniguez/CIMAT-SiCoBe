@@ -22,24 +22,28 @@
       <li>
         <a href="#">Dependencias</a>
         <ul class="fallback">
-          <li><a href="view/altadependencia.php">Agregar</a></li>
-          <li><a href="view/modificardependencia.php">Editar</a></li>
-          <li><a href="view/consultardependencia.php">Mostrar</a></li>
+          <li><a href="view/altadependencia.php">Agregar dependencia</a></li>
+          <li><a href="view/modificardependencia.php">Modificar dependencia</a></li>
+          <li><a href="#">Información</a></li>
         </ul>
       </li>
     <li>
       <a href="#">Programas</a>
       <ul class="fallback">
-        <li><a href="view/altaprograma.php">Agregar</a></li>
-        <li><a href="view/consultarprograma.php">Consultar</a></li>
+        <li><a href="view/altaprograma.php">Agregar programa</a></li>
+        <li><a href="view/consultarprograma.php">Modificar programa</a></li>
+        <li><a href="view/consultarprograma.php">Información</a></li>
+        <li><a href="view/consultarprograma.php">Registrar año fiscal</a></li>
       </ul>
     </li>
     <li>
       <a href="#">Beneficiarios</a>
       <ul class="fallback">
-        <li><a href="view/altabeneficiario.php">Agregar</a></li>
-        <li><a href="view/buscarbeneficiario.php">Buscar</a></li>
-        <li><a href="view/historialbeneficiario.php">Historial</a></li>
+        <li><a href="view/altabeneficiario.php">Agregar organización</a></li>
+        <li><a href="view/altabeneficiario.php">Agregar beneficiario</a></li>
+        <li><a href="view/altabeneficiario.php">Modificar organización</a></li>
+        <li><a href="view/altabeneficiario.php">Modificar beneficiario</a></li>
+        <li><a href="view/buscarbeneficiario.php">Consultar</a></li>
       </ul>
     </li>
     <li><a href="view/about.php">Acerca de</a></li>
