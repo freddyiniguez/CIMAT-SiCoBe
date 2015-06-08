@@ -5,10 +5,22 @@
   <title>SiCoBe</title>
   <meta name="description" content="Sistema de Control de Beneficiarios para mejorar el control de los recursos asignados.">
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
-  <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+  <!--cargamos los plugins de bootstrap-->
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!--cargamos los archivos css de bootstrap-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script type="text/javascript">
+    $('nav li ul').hide().removeClass('fallback');
+    $('nav li').hover(
+      function () {
+        $('ul', this).stop().slideDown(100);
+      },
+      function () {
+        $('ul', this).stop().slideUp(100);
+      }
+    );
+  </script>
 </head>
 <body>
 <div class="main">
@@ -18,15 +30,40 @@
 <h1>SiCoBe</h1>
 <p>Sistema de Control de Beneficiarios</p>
 </div>
-<div class="menu">
+<!--<div class="menu">
 <ul>
   <li class="item_selected"><a href="#">Home</a></li>
-  <li><a href="view/dependencias.php">Dependencias</a></li>
+  <li><a href="view/dependencias.php">Dependencias</a>
+  </li>
   <li><a href="view/programas.php">Programas</a></li>
   <li><a href="view/beneficiarios.php">Beneficiarios</a></li>
   <li><a href="view/about.php">Acerca de</a></li>
 </ul>
-</div>
+</div>-->
+  <nav>
+    <ul>
+      <li class="item_selected"><a href="#">Home</a></li>
+      <li>
+        <a href="#">Dependencia</a>
+        <ul class="fallback">
+          <li><a href="#">Agregar</a></li>
+          <li><a href="#">Editar</a></li>
+          <li><a href="#">Mostrar</a></li>
+        </ul>
+      </li>
+    <li>
+      <a href="#">Programas</a>
+      <ul class="fallback">
+        <li><a href="#">Sub-Link 1</a></li>
+        <li><a href="#">Sub-Link 2</a></li>
+        <li><a href="#">Sub-Link 3</a></li>
+        <li><a href="#">Sub-Link 4</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Beneficiarios</a></li>
+    <li><a href="#">Acerca de</a></li>
+    </ul>
+  </nav>
 </div>
 <div class="content">
 <div class="left-panel">

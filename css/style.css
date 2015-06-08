@@ -88,6 +88,47 @@ a:hover {
 .menu ul li a:hover {
 	color: #E60000;
 }
+/*menu alterno*/
+nav {
+	background-color: #000000;
+	width: 800px;
+	height: 51px;
+	float: left;
+}
+nav .item_selected
+{
+	font-size: 4.1em;
+	color: #239500;
+	background-color: #009933;	
+}
+nav ul {list-style-type: none;}
+nav ul li {float:left;display:inline;}
+nav ul li a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 51px;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+nav ul li a:hover {color: #E60000;}
+nav ul li ul {
+	position:absolute;width:110px;background-color: #000000;
+	margin-left: 1em;
+}
+nav ul li ul li {width:110px;}
+nav ul li ul li a {
+	display:block;
+	padding-left: 5px;
+	padding-right: 5px;
+	color:#FFFFFF;
+	text-decoration: none;
+}
+nav ul li ul li:hover a {background:#F7F7F7;}
+nav ul li ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;}
+/*menu alterno END*/
 .content {
 	width: 800px;
 	float: left;
