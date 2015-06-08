@@ -2,21 +2,19 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>SiCoBe</title>
+  <title>Sistema de Control de Beneficiarios</title>
   <meta name="description" content="Sistema de Control de Beneficiarios para mejorar el control de los recursos asignados.">
-  <link href="../css/style.css" rel="stylesheet" type="text/css">
   <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="../css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
   <link href="../css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="../images/favicon.ico" type="image/ico">
 </head>
 <body>
 <div class="main">
 <div class="page">
 <div class="header">
 <div class="header-img">
-<h1>SiCoBe</h1>
-<p>Sistema de Control de Beneficiarios</p>
 </div>
 
 </div>
@@ -43,9 +41,5 @@
 </div>
 </div>
 </div>
-
-<a href="http://www.htmltemplates.net">
-<img src="images/design_img.gif" class="copyright" alt="HTML Templates"></a>
-
 </body>
 </html>

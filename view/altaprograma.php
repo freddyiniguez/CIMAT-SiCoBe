@@ -2,20 +2,19 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>SiCoBe</title>
+  <title>Sistema de Control de Beneficiarios</title>
   <meta name="description" content="Sistema de Control de Beneficiarios para mejorar el control de los recursos asignados.">
-  <link href="../css/style.css" rel="stylesheet" type="text/css">
-  <!---->
-  <link href="../css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="../images/favicon.ico" type="image/ico">
 </head>
 <body>
 <div class="main">
 <div class="page">
 <div class="header">
 <div class="header-img">
-<h1>SiCoBe</h1>
-<p>Sistema de Control de Beneficiarios</p>
 </div>
 <div class="menu">
 <ul>
@@ -30,16 +29,16 @@
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-<h2 class="title">Alta de dependecias</h2>
+<h2 class="title">Alta de Programas</h2>
 	<div style="margin: 0 auto;">
 <!-- Select Basic -->
 <div class="control-group">
-  <label class="control-label" for="selectbasic">Dependecía</label>
+  <label class="control-label" for="selectbasic">Dependencia</label>
   <div class="controls">
     <select id="selectbasic" name="selectbasic" class="input-xlarge">
-      <option>Selecciona dependecia</option>
-      <option>Dependecia1</option>
-      <option>Dependecia2</option>
+      <option>Selecciona dependencia</option>
+      <option>Dependencia 1</option>
+      <option>Dependencia 2</option>
     </select>
   </div>
 </div>
@@ -48,7 +47,7 @@
 <div class="control-group">
   <label class="control-label" for="nombreprograma">Nombre:</label>
   <div class="controls">
-    <input id="nombreprograma" name="nombreprograma" placeholder="Nombre del programa" class="input-xlarge" required="" type="text">
+    <input id="nombreprograma" name="nombreprograma" placeholder="Nombre del programa" class="input-xlarge" type="text">
     
   </div>
 </div>
@@ -94,9 +93,9 @@
   <label class="control-label" for="anioinicio">Año Inicio</label>
   <div class="controls">
     <select id="anioinicio" name="anioinicio" class="input-xlarge">
-      <option>selecciona</option>
-      <option>opcion1</option>
-      <option>opcion2</option>
+      <option>Selecciona</option>
+      <option>Opción 1</option>
+      <option>Opción 2</option>
     </select>
   </div>
 </div>
@@ -115,43 +114,19 @@
 </div>
 <div class="right-panel">
 <div class="right-panel-in">
-
-<h3>Categories</h3>
+<h3>Áreas General</h3>
 <ul>
-  <li><a href="#">Link item 1<br>
+  <li><a href="#">Ciencias Políticas<br>
     </a></li>
-  <li><a href="index.html#">Link item 2<br>
+  <li><a href="index.html#">Ciencias Económicas<br>
     </a></li>
-  <li><a href="index.html#">Link item 3<br>
+  <li><a href="index.html#">Ciencias Sociales y Administrativas<br>
     </a></li>
-  <li><a href="index.html#">Link item 4<br>
+  <li><a href="index.html#">Ingeniería y Tecnología<br>
     </a></li>
-  <li><a href="index.html#">Link item 5<br>
-    </a></li>
-  <li><a href="index.html#">Link item 6<br>
+  <li><a href="index.html#">Ciencias Jurídicas y Derecho<br>
     </a></li>
 </ul>
-<h3>Blogroll</h3>
-<ul>
-  <li><a href="#">Blogroll link 1<br>
-    </a></li>
-  <li><a href="index.html#">Blogroll link 2<br>
-    </a></li>
-  <li><a href="index.html#">Blogroll link 3<br>
-    </a></li>
-  <li><a href="index.html#">Blogroll link 4<br>
-    </a></li>
-  <li><a href="index.html#">Blogroll link 5<br>
-    </a></li>
-  <li><a href="index.html#">Blogroll link 6<br>
-    </a></li>
-</ul>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 </div>
 </div>
 </div>
