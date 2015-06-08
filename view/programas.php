@@ -16,20 +16,44 @@
 <div class="header">
 <div class="header-img">
 </div>
-<div class="menu">
-<ul>
-  <li><a href="../index.php">Home</a></li>
-  <li><a href="dependencias.php">Dependencias</a></li>
-  <li class="item_selected"><a href="#">Programas</a></li>
-  <li><a href="beneficiarios.php">Beneficiarios</a></li>
-  <li><a href="about.php">Acerca de</a></li>
-</ul>
-</div>
+<nav>
+    <ul>
+      <li><a href="../index.php">Home</a></li>
+      <li>
+        <a href="#">Dependencias</a>
+        <ul class="fallback">
+          <li><a href="altadependencia.php">Agregar dependencia</a></li>
+          <li><a href="modificardependencia.php">Modificar dependencia</a></li>
+          <li><a href="informaciondependencia">Información</a></li>
+        </ul>
+      </li>
+    <li  class="item_selected">
+      <a href="#">Programas</a>
+      <ul class="fallback">
+        <li><a href="altaprograma.php">Agregar programa</a></li>
+        <li><a href="modificarprograma.php">Modificar programa</a></li>
+        <li><a href="informacionprograma.php">Información</a></li>
+        <li><a href="registraraniofiscal.php">Registrar año fiscal</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Beneficiarios</a>
+      <ul class="fallback">
+        <li><a href="altaorganizacion.php">Agregar organización</a></li>
+        <li><a href="altabeneficiario.php">Agregar beneficiario</a></li>
+        <li><a href="modificarorganizacion.php">Modificar organización</a></li>
+        <li><a href="modificarbeneficiario.php">Modificar beneficiario</a></li>
+        <li><a href="consultarbeneficiario.php">Consultar</a></li>
+      </ul>
+    </li>
+    <li><a href="about.php">Acerca de</a></li>
+    </ul>
+  </nav>
 </div>
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-<h2 class="title">Welcome to our site</h2>
+<h2 class="title">Programas</h2>
 <p>&nbsp;</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
 id purus nisi, in rutrum nunc. Donec non orci eros, ut sollicitudin
@@ -90,13 +114,13 @@ platea dictumst. Maecenas a dui leo, sit amet dignissim nisi.<br>
 <ul>
   <li><a href="#">Ciencias Políticas<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Económicas<br>
+  <li><a href="../index.html#">Ciencias Económicas<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Sociales y Administrativas<br>
+  <li><a href="../index.html#">Ciencias Sociales y Administrativas<br>
     </a></li>
-  <li><a href="index.html#">Ingeniería y Tecnología<br>
+  <li><a href="../index.html#">Ingeniería y Tecnología<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Jurídicas y Derecho<br>
+  <li><a href="../index.html#">Ciencias Jurídicas y Derecho<br>
     </a></li>
 </ul>
 </div>

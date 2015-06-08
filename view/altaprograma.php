@@ -137,13 +137,13 @@
 <ul>
   <li><a href="#">Ciencias Políticas<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Económicas<br>
+  <li><a href="../index.html#">Ciencias Económicas<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Sociales y Administrativas<br>
+  <li><a href="../index.html#">Ciencias Sociales y Administrativas<br>
     </a></li>
-  <li><a href="index.html#">Ingeniería y Tecnología<br>
+  <li><a href="../index.html#">Ingeniería y Tecnología<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Jurídicas y Derecho<br>
+  <li><a href="../index.html#">Ciencias Jurídicas y Derecho<br>
     </a></li>
 </ul>
 </div>

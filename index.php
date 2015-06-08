@@ -24,26 +24,26 @@
         <ul class="fallback">
           <li><a href="view/altadependencia.php">Agregar dependencia</a></li>
           <li><a href="view/modificardependencia.php">Modificar dependencia</a></li>
-          <li><a href="#">Información</a></li>
+          <li><a href="view/informaciondependencia">Información</a></li>
         </ul>
       </li>
     <li>
       <a href="#">Programas</a>
       <ul class="fallback">
         <li><a href="view/altaprograma.php">Agregar programa</a></li>
-        <li><a href="view/consultarprograma.php">Modificar programa</a></li>
-        <li><a href="view/consultarprograma.php">Información</a></li>
-        <li><a href="view/consultarprograma.php">Registrar año fiscal</a></li>
+        <li><a href="view/modificarprograma.php">Modificar programa</a></li>
+        <li><a href="view/informacionprograma.php">Información</a></li>
+        <li><a href="view/registraraniofiscal.php">Registrar año fiscal</a></li>
       </ul>
     </li>
     <li>
       <a href="#">Beneficiarios</a>
       <ul class="fallback">
-        <li><a href="view/altabeneficiario.php">Agregar organización</a></li>
+        <li><a href="view/altaorganizacion.php">Agregar organización</a></li>
         <li><a href="view/altabeneficiario.php">Agregar beneficiario</a></li>
-        <li><a href="view/altabeneficiario.php">Modificar organización</a></li>
-        <li><a href="view/altabeneficiario.php">Modificar beneficiario</a></li>
-        <li><a href="view/buscarbeneficiario.php">Consultar</a></li>
+        <li><a href="view/modificarorganizacion.php">Modificar organización</a></li>
+        <li><a href="view/modificarbeneficiario.php">Modificar beneficiario</a></li>
+        <li><a href="view/consultarbeneficiario.php">Consultar</a></li>
       </ul>
     </li>
     <li><a href="view/about.php">Acerca de</a></li>
@@ -116,13 +116,13 @@ platea dictumst. Maecenas a dui leo, sit amet dignissim nisi.<br>
 <ul>
   <li><a href="#">Ciencias Políticas<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Económicas<br>
+  <li><a href="#">Ciencias Económicas<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Sociales y Administrativas<br>
+  <li><a href="#">Ciencias Sociales y Administrativas<br>
     </a></li>
-  <li><a href="index.html#">Ingeniería y Tecnología<br>
+  <li><a href="#">Ingeniería y Tecnología<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Jurídicas y Derecho<br>
+  <li><a href="#">Ciencias Jurídicas y Derecho<br>
     </a></li>
 </ul>
 </div>

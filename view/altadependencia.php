@@ -22,30 +22,34 @@
       <li class="item_selected">
         <a href="#">Dependencias</a>
         <ul class="fallback">
-          <li><a href="#">Agregar</a></li>
-          <li><a href="modificardependencia.php">Editar</a></li>
-          <li><a href="consultardependencia.php">Mostrar</a></li>
+          <li><a href="altadependencia.php">Agregar dependencia</a></li>
+          <li><a href="modificardependencia.php">Modificar dependencia</a></li>
+          <li><a href="informaciondependencia">Información</a></li>
         </ul>
       </li>
     <li>
       <a href="#">Programas</a>
       <ul class="fallback">
-        <li><a href="altaprograma.php">Agregar</a></li>
-        <li><a href="consultarprograma.php">Consultar</a></li>
+        <li><a href="altaprograma.php">Agregar programa</a></li>
+        <li><a href="modificarprograma.php">Modificar programa</a></li>
+        <li><a href="informacionprograma.php">Información</a></li>
+        <li><a href="registraraniofiscal.php">Registrar año fiscal</a></li>
       </ul>
     </li>
     <li>
       <a href="#">Beneficiarios</a>
       <ul class="fallback">
-        <li><a href="altabeneficiario.php">Agregar</a></li>
-        <li><a href="buscarbeneficiario.php">Buscar</a></li>
-        <li><a href="historialbeneficiario.php">Historial</a></li>
+        <li><a href="altaorganizacion.php">Agregar organización</a></li>
+        <li><a href="altabeneficiario.php">Agregar beneficiario</a></li>
+        <li><a href="modificarorganizacion.php">Modificar organización</a></li>
+        <li><a href="modificarbeneficiario.php">Modificar beneficiario</a></li>
+        <li><a href="consultarbeneficiario.php">Consultar</a></li>
       </ul>
     </li>
     <li><a href="about.php">Acerca de</a></li>
     </ul>
   </nav>
-</div>
+  </div>
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
@@ -102,13 +106,13 @@
 <ul>
   <li><a href="#">Ciencias Políticas<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Económicas<br>
+  <li><a href="../index.html#">Ciencias Económicas<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Sociales y Administrativas<br>
+  <li><a href="../index.html#">Ciencias Sociales y Administrativas<br>
     </a></li>
-  <li><a href="index.html#">Ingeniería y Tecnología<br>
+  <li><a href="../index.html#">Ingeniería y Tecnología<br>
     </a></li>
-  <li><a href="index.html#">Ciencias Jurídicas y Derecho<br>
+  <li><a href="../index.html#">Ciencias Jurídicas y Derecho<br>
     </a></li>
 </ul>
 </div>
