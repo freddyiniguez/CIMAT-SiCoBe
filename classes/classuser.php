@@ -74,7 +74,7 @@
 					break;
 				case 'altaprograma':
 					 $sql ="INSERT INTO programa( Nombre, Descripcion, Responsable, Poblacion_objetivo, Sector, Anio_inicio, Iddependecia, Convocatoria) 
-					VALUES ('".$nombreprograma."','".$descripcionprograma."','".$responsableprograma."','".$poblacionobjetivo."','".$sectorprograma."','".$anioinicio."','".$dependencia."','http://www.google.com')";
+					VALUES ('".$txtNombre."','".$txtDescripcion."','".$txtResponsable."','".$txtPoblacion."','".$txtSector."','".$anioinicio."','".$selDependencia."','http://www.google.com')";
 					break;
 				default:
 					break;

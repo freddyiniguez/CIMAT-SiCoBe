@@ -54,15 +54,15 @@
 <div class="left-panel">
 <div class="left-panel-in">
 <h2 class="title">Alta de Programa</h2>
-<form class="form-horizontal">
+<form class="form-horizontal" method="post" action="../controllers/controladorprograma.php">
 <!-- Select Basic -->
 <div class="control-group">
   <label class="control-label" for="selectbasic">Dependencia</label>
   <div class="controls">
     <select id="selectbasic" name="selDependencia" class="input-xlarge">
       <option>Selecciona dependencia</option>
-      <option>Dirección Tecnológica</option>
-      <option>Dirección de Buen Gobierno</option>
+      <option value="1">Dirección Tecnológica</option>
+      <option value="2">Dirección de Buen Gobierno</option>
     </select>
   </div>
 </div>
@@ -134,7 +134,8 @@
     <button id="cancel" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>
-
+  <input type="hidden" name="bandera" id="bandera" value="altaprograma">
+  <input type="hidden" name="banderatipo" id="banderatipo" value="alta">
 	</form>
 </div>
 </div>
