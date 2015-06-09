@@ -24,7 +24,7 @@
         <ul class="fallback">
           <li><a href="view/altadependencia.php">Agregar dependencia</a></li>
           <li><a href="view/modificardependencia.php">Modificar dependencia</a></li>
-          <li><a href="view/informaciondependencia">Información</a></li>
+          <li><a href="view/informaciondependencia.php">Información</a></li>
         </ul>
       </li>
     <li>

@@ -24,7 +24,7 @@
         <ul class="fallback">
           <li><a href="altadependencia.php">Agregar dependencia</a></li>
           <li><a href="modificardependencia.php">Modificar dependencia</a></li>
-          <li><a href="informaciondependencia">Información</a></li>
+          <li><a href="informaciondependencia.php">Información</a></li>
         </ul>
       </li>
     <li>
@@ -53,51 +53,51 @@
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-<h2 class="title">Alta de Beneficiarios</h2>
+<h2 class="title">Alta de Beneficiario</h2>
     <form class="form-horizontal">
 
 <br>
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtNombre">Nombre:</label>
+  <label class="control-label" for="txtNombre">Nombre</label>
   <div class="controls">
-    <input id="txtNombre" name="txtNombre" type="text" placeholder="" class="input-large" required="">
+    <input id="txtNombre" name="txtNombre" type="text" class="input-large" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtApellidos">Apellidos:</label>
+  <label class="control-label" for="txtApellidos">Apellidos</label>
   <div class="controls">
-    <input id="txtApellidos" name="txtApellidos" type="text" placeholder="" class="input-large" required="">
+    <input id="txtApellidos" name="txtApellidos" type="text" class="input-large" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtRfc">RFC:</label>
+  <label class="control-label" for="txtRfc">RFC</label>
   <div class="controls">
-    <input id="txtRfc" name="txtRfc" type="text" placeholder="" class="input-medium" required="">
+    <input id="txtRfc" name="txtRfc" type="text" class="input-large" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtCurp">CURP:</label>
+  <label class="control-label" for="txtCurp">CURP</label>
   <div class="controls">
-    <input id="txtCurp" name="txtCurp" type="text" placeholder="" class="input-medium" required="">
+    <input id="txtCurp" name="txtCurp" type="text"  class="input-large" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtDomicilio">Domicilio:</label>
+  <label class="control-label" for="txtDomicilio">Domicilio</label>
   <div class="controls">
-    <input id="txtDomicilio" name="txtDomicilio" type="text" placeholder="" class="input-xlarge" required="">
+    <input id="txtDomicilio" name="txtDomicilio" type="text"  class="input-large" required="">
     
   </div>
 </div>
@@ -106,28 +106,32 @@
 <div class="control-group">
   <label class="control-label" for="txtTelefono">Teléfono</label>
   <div class="controls">
-    <input id="txtTelefono" name="txtTelefono" type="text" placeholder="" class="input-medium" required="">
+    <input id="txtTelefono" name="txtTelefono" type="text"  class="input-large">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtEmail">e-mail:</label>
+  <label class="control-label" for="txtEmail">e-mail</label>
   <div class="controls">
-    <input id="txtEmail" name="txtEmail" type="text" placeholder="" class="input-large" required="">
+    <input id="txtEmail" name="txtEmail" type="text" class="input-large">
     
   </div>
 </div>
 
-<!-- Select Basic -->
+<!-- Multiple Radios (inline) -->
 <div class="control-group">
-  <label class="control-label" for="selEstado">Estado</label>
+  <label class="control-label" for="rbnEstado">Estado</label>
   <div class="controls">
-    <select id="selEstado" name="selEstado" class="input-medium">
-      <option>Activo</option>
-      <option>Vetado</option>
-    </select>
+    <label class="radio inline" for="rbnEstado-0">
+      <input type="radio" name="rbnEstado" id="rbnEstado-0" value="Activo" checked="checked">
+      Activo
+    </label>
+    <label class="radio inline" for="rbnEstado-1">
+      <input type="radio" name="rbnEstado" id="rbnEstado-1" value="Vetado">
+      Vetado
+    </label>
   </div>
 </div>
 

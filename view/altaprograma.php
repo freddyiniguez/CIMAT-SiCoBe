@@ -22,52 +22,56 @@
       <li>
         <a href="#">Dependencias</a>
         <ul class="fallback">
-          <li><a href="altadependencia.php">Agregar</a></li>
-          <li><a href="modificardependencia.php">Editar</a></li>
-          <li><a href="consultardependencia.php">Mostrar</a></li>
+          <li><a href="altadependencia.php">Agregar dependencia</a></li>
+          <li><a href="modificardependencia.php">Modificar dependencia</a></li>
+          <li><a href="informaciondependencia.php">Información</a></li>
         </ul>
       </li>
-    <li  class="item_selected">
+    <li class="item_selected">
       <a href="#">Programas</a>
       <ul class="fallback">
-        <li><a href="altaprograma.php">Agregar</a></li>
-        <li><a href="consultarprograma.php">Consultar</a></li>
+        <li><a href="altaprograma.php">Agregar programa</a></li>
+        <li><a href="modificarprograma.php">Modificar programa</a></li>
+        <li><a href="informacionprograma.php">Información</a></li>
+        <li><a href="registraraniofiscal.php">Registrar año fiscal</a></li>
       </ul>
     </li>
     <li>
       <a href="#">Beneficiarios</a>
       <ul class="fallback">
-        <li><a href="altabeneficiario.php">Agregar</a></li>
-        <li><a href="buscarbeneficiario.php">Buscar</a></li>
-        <li><a href="historialbeneficiario.php">Historial</a></li>
+        <li><a href="altaorganizacion.php">Agregar organización</a></li>
+        <li><a href="altabeneficiario.php">Agregar beneficiario</a></li>
+        <li><a href="modificarorganizacion.php">Modificar organización</a></li>
+        <li><a href="modificarbeneficiario.php">Modificar beneficiario</a></li>
+        <li><a href="consultarbeneficiario.php">Consultar</a></li>
       </ul>
     </li>
     <li><a href="about.php">Acerca de</a></li>
     </ul>
-  </nav></div>
+  </nav>
+  </div>
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-<h2 class="title">Alta de Programas</h2>
-	<div style="margin: 0 auto;">
+<h2 class="title">Alta de Programa</h2>
+<form class="form-horizontal">
 <!-- Select Basic -->
 <div class="control-group">
   <label class="control-label" for="selectbasic">Dependencia</label>
   <div class="controls">
-    <select id="selectbasic" name="selectbasic" class="input-xlarge">
+    <select id="selectbasic" name="selDependencia" class="input-xlarge">
       <option>Selecciona dependencia</option>
-      <option>Dependencia 1</option>
-      <option>Dependencia 2</option>
+      <option>Dirección Tecnológica</option>
+      <option>Dirección de Buen Gobierno</option>
     </select>
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="nombreprograma">Nombre:</label>
+  <label class="control-label" for="nombreprograma">Nombre</label>
   <div class="controls">
-    <input id="nombreprograma" name="nombreprograma" placeholder="Nombre del programa" class="input-xlarge" type="text">
-    
+    <input id="nombreprograma" name="txtNombre" class="input-xlarge" type="text" required="">
   </div>
 </div>
 
@@ -75,7 +79,7 @@
 <div class="control-group">
   <label class="control-label" for="descripcionprograma">Descripción</label>
   <div class="controls">
-    <input id="descripcionprograma" name="descripcionprograma" placeholder="Descripción del programa" class="input-xlarge" type="text">
+    <input id="descripcionprograma" name="txtDescripcion" class="input-xlarge" type="text" required="">
     
   </div>
 </div>
@@ -84,7 +88,7 @@
 <div class="control-group">
   <label class="control-label" for="responsableprograma">Responsable</label>
   <div class="controls">
-    <input id="responsableprograma" name="responsableprograma" placeholder="Responsable del programa" class="input-xlarge" type="text">
+    <input id="responsableprograma" name="txtResponsable" class="input-xlarge" type="text" required="">
     
   </div>
 </div>
@@ -93,7 +97,7 @@
 <div class="control-group">
   <label class="control-label" for="sectorprograma">Sector</label>
   <div class="controls">
-    <input id="sectorprograma" name="sectorprograma" placeholder="Sector al que pertenece" class="input-xlarge" type="text">
+    <input id="sectorprograma" name="txtSector" class="input-xlarge" type="text" required="">
     
   </div>
 </div>
@@ -102,7 +106,7 @@
 <div class="control-group">
   <label class="control-label" for="poblacionobjetivo">Población</label>
   <div class="controls">
-    <input id="poblacionobjetivo" name="poblacionobjetivo" placeholder="Población Objetivo" class="input-xlarge" type="text">
+    <input id="poblacionobjetivo" name="txtPoblacion" class="input-xlarge" type="text" required="">
     
   </div>
 </div>
@@ -113,8 +117,11 @@
   <div class="controls">
     <select id="anioinicio" name="anioinicio" class="input-xlarge">
       <option>Selecciona</option>
-      <option>Opción 1</option>
-      <option>Opción 2</option>
+      <option>2017</option>
+      <option>2016</option>
+      <option>2015</option>
+      <option>2014</option>
+      <option>2013</option>
     </select>
   </div>
 </div>
@@ -123,12 +130,12 @@
 <div class="control-group">
   <label class="control-label" for="add"></label>
   <div class="controls">
-    <button id="add" name="add" class="btn btn-success">Agregar</button>
-    <button id="cancel" name="cancel" class="btn btn-danger">Cancelar</button>
+    <button id="add" name="btnRegistrar" class="btn btn-success">Registrar</button>
+    <button id="cancel" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>
 
-	</div>
+	</form>
 </div>
 </div>
 <div class="right-panel">

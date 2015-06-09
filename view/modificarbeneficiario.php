@@ -25,7 +25,7 @@
         <ul class="fallback">
           <li><a href="altadependencia.php">Agregar dependencia</a></li>
           <li><a href="modificardependencia.php">Modificar dependencia</a></li>
-          <li><a href="informaciondependencia">Información</a></li>
+          <li><a href="informaciondependencia.php">Información</a></li>
         </ul>
       </li>
     <li>
@@ -60,45 +60,45 @@
 <br>
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtCurp">CURP:</label>
+  <label class="control-label" for="txtCurp">CURP</label>
   <div class="controls">
-    <input id="txtCurp" name="txtCurp" type="text" placeholder="" class="input-medium" readonly required="">
+    <input id="txtCurp" name="txtCurp" type="text" class="input-large" readonly >
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtNombre">Nombre:</label>
+  <label class="control-label" for="txtNombre">Nombre</label>
   <div class="controls">
-    <input id="txtNombre" name="txtNombre" type="text" placeholder="" class="input-large" required="">
+    <input id="txtNombre" name="txtNombre" type="text" class="input-large" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtApellidos">Apellidos:</label>
+  <label class="control-label" for="txtApellidos">Apellidos</label>
   <div class="controls">
-    <input id="txtApellidos" name="txtApellidos" type="text" placeholder="" class="input-large" required="">
+    <input id="txtApellidos" name="txtApellidos" type="text" class="input-large" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtRfc">RFC:</label>
+  <label class="control-label" for="txtRfc">RFC</label>
   <div class="controls">
-    <input id="txtRfc" name="txtRfc" type="text" placeholder="" class="input-medium" required="">
+    <input id="txtRfc" name="txtRfc" type="text" class="input-large" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtDomicilio">Domicilio:</label>
+  <label class="control-label" for="txtDomicilio">Domicilio</label>
   <div class="controls">
-    <input id="txtDomicilio" name="txtDomicilio" type="text" placeholder="" class="input-xlarge" required="">
+    <input id="txtDomicilio" name="txtDomicilio" type="text" class="input-large" required="">
     
   </div>
 </div>
@@ -107,16 +107,16 @@
 <div class="control-group">
   <label class="control-label" for="txtTelefono">Teléfono</label>
   <div class="controls">
-    <input id="txtTelefono" name="txtTelefono" type="text" placeholder="" class="input-medium" required="">
+    <input id="txtTelefono" name="txtTelefono" type="text" class="input-large" >
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtEmail">e-mail:</label>
+  <label class="control-label" for="txtEmail">e-mail</label>
   <div class="controls">
-    <input id="txtEmail" name="txtEmail" type="text" placeholder="" class="input-large" required="">
+    <input id="txtEmail" name="txtEmail" type="text" class="input-large" >
     
   </div>
 </div>
@@ -126,7 +126,7 @@
 <div class="control-group">
   <label class="control-label" for="btnRegistrar"></label>
   <div class="controls">
-    <button id="btnRegistrar" name="btnRegistrar" class="btn btn-success">Registrar</button>
+    <button id="btnRegistrar" name="btnModificar" class="btn btn-primary">Modificar</button>
     <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>

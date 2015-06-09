@@ -24,7 +24,7 @@
         <ul class="fallback">
           <li><a href="altadependencia.php">Agregar dependencia</a></li>
           <li><a href="modificardependencia.php">Modificar dependencia</a></li>
-          <li><a href="informaciondependencia">Información</a></li>
+          <li><a href="informaciondependencia.php">Información</a></li>
         </ul>
       </li>
     <li>
@@ -55,31 +55,31 @@
 <div class="left-panel-in">
 	<div style="margin: 0 auto;">
 <!-- Form Name -->
-<legend>Modificar Datos de la Organización</legend>
-
+<legend>Modificar datos de la Organización</legend>
+<form class="form-horizontal">
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="rfc">Rfc</label>
+  <label class="control-label" for="rfc">RFC</label>
   <div class="controls">
-    <input id="rfc" name="rfc" placeholder="Rfc" readonly class="input-xlarge" type="text">
+    <input id="rfc" name="txtRfc" readonly class="input-xlarge" type="text" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="nombreorganizacion">Nombre:</label>
+  <label class="control-label" for="nombreorganizacion">Nombre</label>
   <div class="controls">
-    <input id="nombreorganizacion" name="nombreorganizacion" placeholder="Nombre de la organización" class="input-xlarge" type="text">
+    <input id="nombreorganizacion" name="txtNombre" class="input-xlarge" type="text" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="domicilio">Domicilio:</label>
+  <label class="control-label" for="domicilio">Domicilio</label>
   <div class="controls">
-    <input id="domicilio" name="domicilio" placeholder="Domicilio" class="input-xlarge" type="text">
+    <input id="domicilio" name="txtDomicilio" class="input-xlarge" type="text" required="">
     
   </div>
 </div>
@@ -88,16 +88,16 @@
 <div class="control-group">
   <label class="control-label" for="titular">Titular </label>
   <div class="controls">
-    <input id="titular" name="titular" placeholder="Titulat de la Organización" class="input-xlarge" type="text">
+    <input id="titular" name="txtTitular" class="input-xlarge" type="text" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="telefono">Teléfono:</label>
+  <label class="control-label" for="telefono">Teléfono</label>
   <div class="controls">
-    <input id="telefono" name="telefono" placeholder="Teléfono Organización" class="input-xlarge" type="text">
+    <input id="telefono" name="txtTelefono" class="input-xlarge" type="text">
     
   </div>
 </div>
@@ -106,7 +106,7 @@
 <div class="control-group">
   <label class="control-label" for="correo">e-mail</label>
   <div class="controls">
-    <input id="correo" name="correo" placeholder="Correo eléctronico" class="input-xlarge" type="text">
+    <input id="correo" name="txtCorreo" class="input-xlarge" type="text">
     
   </div>
 </div>
@@ -115,13 +115,14 @@
 <div class="control-group">
   <label class="control-label" for="add"></label>
   <div class="controls">
-    <button id="add" name="add" class="btn btn-info">Modificar</button>
-    <button id="cancel" name="cancel" class="btn btn-danger">Cancelar</button>
+    <button id="add" name="btnModificar" class="btn btn-primary">Modificar</button>
+    <button id="cancel" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>
 	</div>
 </div>
 </div>
+</form>
 <div class="right-panel">
 <div class="right-panel-in">
 <h3>Áreas General</h3>

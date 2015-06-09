@@ -24,10 +24,10 @@
         <ul class="fallback">
           <li><a href="altadependencia.php">Agregar dependencia</a></li>
           <li><a href="modificardependencia.php">Modificar dependencia</a></li>
-          <li><a href="informaciondependencia">Información</a></li>
+          <li><a href="informaciondependencia.php">Información</a></li>
         </ul>
       </li>
-    <li class="item_selected">
+    <li>
       <a href="#">Programas</a>
       <ul class="fallback">
         <li><a href="altaprograma.php">Agregar programa</a></li>
@@ -36,7 +36,7 @@
         <li><a href="registraraniofiscal.php">Registrar año fiscal</a></li>
       </ul>
     </li>
-    <li>
+    <li class="item_selected">
       <a href="#">Beneficiarios</a>
       <ul class="fallback">
         <li><a href="altaorganizacion.php">Agregar organización</a></li>
@@ -53,35 +53,119 @@
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-<h2 class="title">Alta de Año Fiscal</h2>
-    <form class="form-horizontal">
-<!-- Text input-->
+<h2 class="title">Consultas y Reportes</h2>
+  <form class="form-horizontal">
+	<div style="margin: 0 auto;">
+
+    <!-- Multiple Radios (inline) -->
 <div class="control-group">
-  <br>
-  <label class="control-label" for="txtaño">Año:</label>
+  <label class="control-label" for="rbnTipo">Tipo de Beneficiario</label>
   <div class="controls">
-    <input id="txtaño" name="txtaño" type="text" placeholder="" class="input-medium" required="">
-    
+    <label class="radio inline" for="rbnTipo-0">
+      <input type="radio" name="rbnTipo" id="rbnTipo-0" value="Persona" checked="checked">
+      Persona
+    </label>
+    <label class="radio inline" for="rbnTipo-1">
+      <input type="radio" name="rbnTipo" id="rbnTipo-1" value="Organización">
+      Organización
+    </label>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="control-group">
+  <label class="control-label" for="selBuscar">Buscar por</label>
+  <div class="controls">
+    <select id="selBuscar" name="selBuscar" class="input-medium">
+      <option>CURP</option>
+      <option>RFC</option>
+      <option>Nombre</option>
+      <option>Apellidos</option>
+    </select>
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="txtpresupuesto">Presupuesto:</label>
+  <label class="control-label" for="txtBuscar"></label>
   <div class="controls">
-    <input id="txtpresupuesto" name="txtpresupuesto" type="text" placeholder="" class="input-medium" required="">
+    <input id="txtBuscar" name="txtBuscar" type="text" placeholder="Ingrese el dato a buscar" class="input-large" required="">
     
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="control-group">
+  <label class="control-label" for="rbnBuscar">Buscar</label>
+  <div class="controls">
+    <label class="radio inline" for="rbnBuscar-0">
+      <input type="radio" name="rbnBuscar" id="rbnBuscar-0" value="Todos" checked="checked">
+      Todos
+    </label>
+    <label class="radio inline" for="rbnBuscar-1">
+      <input type="radio" name="rbnBuscar" id="rbnBuscar-1" value="Activos">
+      Activos
+    </label>
+    <label class="radio inline" for="rbnBuscar-2">
+      <input type="radio" name="rbnBuscar" id="rbnBuscar-2" value="Vetados">
+      Vetados
+    </label>
   </div>
 </div>
 
 <!-- Button (Double) -->
 <div class="control-group">
-  <label class="control-label" for="btnRegistrar"></label>
+  <label class="control-label" for="btnBuscar"></label>
   <div class="controls">
-    <button id="btnRegistrar" name="btnRegistrar" class="btn btn-success">Registrar</button>
+    <button id="btnBuscar" name="btnBuscar" class="btn btn-primary">Buscar</button>
     <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>
+
+ <table style="width:100%">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>CURP</th>
+      <th>RFC</th>
+      <th>Domicilio</th>
+      <th>Teléfono</th>
+      <th>e-mail</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Juan</td>
+    <td>Martínez</td>    
+    <td>MAMJ</td>
+    <td>MAMJ</td>
+    <td>Río Grande, Zacatecas</td>
+    <td>4981000000</td>
+    <td>ejemplo@yahoo.com</td>
+    <td>Activo</td>
+  </tr>
+  <tr>
+    <td>Fredy</td>
+    <td>Íñiguez</td>    
+    <td>IILF</td>
+    <td>IILF</td>
+    <td>CIMAT, Zacatecas</td>
+    <td>4921000000</td>
+    <td>ejemplo@gmail.com</td>
+    <td>Vetado</td>
+  </tr>
+</table>
+
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="btnImprimir"></label>
+  <div class="controls">
+    <button id="btnImprimir" name="btnImprimir" style = "margin-top: 15px"class="btn btn-primary">Imprimir</button>
+  </div>
+</div>
+
+	</div>
 </form>
 </div>
 </div>
@@ -110,5 +194,6 @@
 </div>
 </div>
 </div>
+
 </body>
 </html>

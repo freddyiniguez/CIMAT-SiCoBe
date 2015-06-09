@@ -27,7 +27,7 @@
           <li><a href="informaciondependencia.php">Información</a></li>
         </ul>
       </li>
-    <li>
+    <li class="item_selected">
       <a href="#">Programas</a>
       <ul class="fallback">
         <li><a href="altaprograma.php">Agregar programa</a></li>
@@ -36,7 +36,7 @@
         <li><a href="registraraniofiscal.php">Registrar año fiscal</a></li>
       </ul>
     </li>
-    <li class="item_selected">
+    <li>
       <a href="#">Beneficiarios</a>
       <ul class="fallback">
         <li><a href="altaorganizacion.php">Agregar organización</a></li>
@@ -49,91 +49,38 @@
     <li><a href="about.php">Acerca de</a></li>
     </ul>
   </nav>
-</div>
+  </div>
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-<h2 class="title">Alta de Organización</h2>
-
-<form class="form-horizontal">
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="txtRFC">RFC</label>
-  <div class="controls">
-    <input id="txtRFC" name="txtRFC" type="text" class="input-large" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="txtNombre">Nombre</label>
-  <div class="controls">
-    <input id="txtNombre" name="txtNombre" type="text" class="input-large" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="txtDomicilio">Domicilio</label>
-  <div class="controls">
-    <input id="txtDomicilio" name="txtDomicilio" type="text" class="input-large" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="txtTitular">Titular</label>
-  <div class="controls">
-    <input id="txtTitular" name="txtTitular" type="text" class="input-large" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="txtTelefono">Teléfono</label>
-  <div class="controls">
-    <input id="txtTelefono" name="txtTelefono" type="text" class="input-large" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="txtEmail">e-mail</label>
-  <div class="controls">
-    <input id="txtEmail" name="txtEmail" type="text" class="input-large" required="">
-    
-  </div>
-</div>
-<!-- Multiple Radios (inline) -->
-<div class="control-group">
-  <label class="control-label" for="rbnEstado">Estado</label>
-  <div class="controls">
-    <label class="radio inline" for="rbnEstado-0">
-      <input type="radio" name="rbnEstado" id="rbnEstado-0" value="Activo" checked="checked">
-      Activo
-    </label>
-    <label class="radio inline" for="rbnEstado-1">
-      <input type="radio" name="rbnEstado" id="rbnEstado-1" value="Vetado">
-      Vetado
-    </label>
-  </div>
-</div>
-
-<!-- Button (Double) -->
-<div class="control-group">
-  <label class="control-label" for="btnRegistrar"></label>
-  <div class="controls">
-    <button id="btnRegistrar" name="btnRegistrar" class="btn btn-success">Registrar</button>
-    <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
-  </div>
-</div>
-</form>
-
+<h2 class="title">Programas de la Secretaría de Economía</h2>
+    <form class="form-horizontal">
+      <table style="width:100%">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>URL</th>
+      <th>Responsable</th>
+      <th>Sector</th>
+      <th>Año inicio</th>
+    </tr>
+  </thead>
+    <tr>
+    <td>Certificaciones MexicoFISRT</td>
+    <td><a href="http://www.mexico-first.org/">México FIRST</a></td>    
+    <td>Miguel Gómez</td>
+    <td>Educativo</td>
+    <td>2013</td>
+  </tr>
+  <tr>
+    <td>PROIAT</td>
+    <td><a href="http://www.economia.gob.mx/files/comunidad_negocios/industria_comercio/Proiat/convocatoria_PROIAT_2015.pdf">PROIAT</a></td>    
+    <td>Lic. José Luis Martinez</td>
+    <td>Tecnológico</td>
+    <td>2011</td>
+  </tr>
+</table>
+	</form>
 </div>
 </div>
 <div class="right-panel">
@@ -161,5 +108,6 @@
 </div>
 </div>
 </div>
+
 </body>
 </html>

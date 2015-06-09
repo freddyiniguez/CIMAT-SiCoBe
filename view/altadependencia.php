@@ -24,7 +24,7 @@
         <ul class="fallback">
           <li><a href="altadependencia.php">Agregar dependencia</a></li>
           <li><a href="modificardependencia.php">Modificar dependencia</a></li>
-          <li><a href="informaciondependencia">Información</a></li>
+          <li><a href="informaciondependencia.php">Información</a></li>
         </ul>
       </li>
     <li>
@@ -53,51 +53,52 @@
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-<h2 class="title">Alta de Dependencias</h2>
-	<div style="margin: 0 auto;">
+<h2 class="title">Alta de Dependencia</h2>
+    <form class="form-horizontal">
 		<!--Nombre de la dependecia-->
 		<div class="control-group">
-		  <label class="control-label" for="singlebutton">Nombre de la Dependecía:</label>
+		  <label class="control-label" for="singlebutton">Nombre</label>
 		  <div class="controls">
-		    <input type="text" class="input-xlarge" name="dependecia" placeholder="Nombre de la dependecía"/>
+		    <input type="text" class="input-xlarge" name="txtDependencia" required=""/>
 		  </div>
 		</div>
 		<!--dirección-->
 		<div class="control-group">
-		  <label class="control-label" for="singlebutton">Dirección:</label>
+		  <label class="control-label" for="singlebutton">Dirección</label>
 		  <div class="controls">
-		    <input type="text" class="input-xlarge" name="direccion" placeholder="Dirección"/>
+		    <input type="text" class="input-xlarge" name="txtDireccion" required=""/>
 		  </div>
 		</div>
 		<!--titular-->
 		<div class="control-group">
-		  <label class="control-label" for="singlebutton">Titular:</label>
+		  <label class="control-label" for="singlebutton">Titular</label>
 		  <div class="controls">
-		    <input type="tel" class="input-xlarge" name="titular" placeholder="Titular de la dependecía"/>
+		    <input type="tel" class="input-xlarge" name="txtTitular" required=""/>
 		  </div>
 		</div>
 		<!--telefono-->
 		<div class="control-group">
-		  <label class="control-label" for="singlebutton">Teléfono:</label>
+		  <label class="control-label" for="singlebutton">Teléfono</label>
 		  <div class="controls">
-		    <input type="tel" class="input-xlarge" name="telefono" placeholder="Ingresar telefono"/>
+		    <input type="tel" class="input-xlarge" name="txtTelefono"/>
 		  </div>
 		</div>
 		<!--correo electronico-->
 		<div class="control-group">
-		  <label class="control-label" for="singlebutton">e-mail:</label>
+		  <label class="control-label" for="singlebutton">e-mail</label>
 		  <div class="controls">
-		    <input type="email" class="input-xlarge" placeholder="Correo electrónico"/>
+		    <input type="email" class="input-xlarge" name="txtEmail"/>
 		  </div>
 		</div>
 		<!--boton-->
 		<div class="control-group">
 		  <label class="control-label" for="singlebutton"></label>
 		  <div class="controls">
-		  	<input type="submit" id="singlebutton" name="singlebutton" class="btn btn-success" value="Agregar" />
+		  	<button id="btnAceptar" name="btnRegistrar" class="btn btn-success">Registrar</button>
+        <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
 		  </div>
 		</div>
-	</div>
+	</form>
 </div>
 </div>
 <div class="right-panel">
