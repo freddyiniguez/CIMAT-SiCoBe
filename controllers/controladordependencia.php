@@ -3,8 +3,8 @@
 	* Controlador.
 	* Permite instanciar la clase encargada de actualizar una dependencia.
 	*/
-	$tipoTransaccion = $_POST("banderatipo");
 	require_once "../classes/classuser.php";
+	$tipoTransaccion = $_POST["banderatipo"];
 		$dependencia = new Generica();
 		switch ($tipoTransaccion) {
 			case 'alta':
