@@ -1,5 +1,7 @@
 <?php
+	echo "Llego al classuser";
 	require_once "dbclass.php";
+	echo "Llego al classuser";
 	class Generica extends Dbclass
 	{
 		function __construct()
@@ -7,15 +9,13 @@
 			parent::__construct();
 		}
 
-		public function getValid($data = array(), $metadata)
-		{
-			switch ($metadata) {
+		public function getValid($data = array(), $metadata){
+			switch ($metadata){
 				case 'login':
 					 if(self::loginUser($data) == 1){
 					 	echo "Logueado exitosamente";
 					 }
-					 else
-					 {
+					 else{
 					 	echo "fallas al autentificarse";
 					 }
 					break;
@@ -23,8 +23,7 @@
 					if (self::addMethod($data) > 0) {
 						echo "Datos insertados correctamente";
 					}
-					else
-					{
+					else{
 						echo "Hubo un error al insertar los datos";
 					}
 					break;
@@ -33,12 +32,9 @@
 				default:
 					break;
 			}
-
-			
 		}
 		protected function loginUser($dats= array())
 		{
-			# code...
 			foreach ($dats as $key => $value) $$key = $value;
 			$contrasena = md5($contrasena);
 
@@ -47,13 +43,10 @@
 			try {
 				$resultado = $this->conexion->query($sql);
 				if (!$resultado) {
-					# code...
 					throw new Exception("Error en la Base de datos [{$this->conexion->errno}] {$this->conexion->error}", 1);
-					
 				}
 				$count = $resultado->num_rows;
 				if ($count > 0) {
-					# code...
 					$mensaje = 1;
 				}
 				else
@@ -63,7 +56,7 @@
 				return "Lo sentimos, ocurrio un error al generar la consulta ".$e;
 			}
 		}
-		//metodo que agregará datos generico a las tablas
+
 		protected function addMethod($valueMethod= array())
 		{
 			foreach ($valueMethod as $key => $value) $$key = $value;
@@ -74,7 +67,7 @@
 					break;
 				case 'altaprograma':
 					 $sql ="INSERT INTO programa( Nombre, Descripcion, Responsable, Poblacion_objetivo, Sector, Anio_inicio, Iddependecia, Convocatoria) 
-					VALUES ('".$nombreprograma."','".$descripcionprograma."','".$responsableprograma."','".$poblacionobjetivo."','".$sectorprograma."','".$anioinicio."','".$dependencia."','http://www.google.com')";
+					VALUES ('".utf8_decode($txtNombre)."','".utf8_decode($txtDescripcion)."','".utf8_decode($txtResponsable)."','".utf8_decode($txtPoblacion)."','".utf8_decode($txtSector)."','".$anioinicio."','".$selDependencia."','".utf8_decode($txtURL)"')";
 					break;
 				default:
 					break;
@@ -88,7 +81,7 @@
 				$lastId = $this->conexion->insert_id;
 				return $lastId;
 			} catch (Exception $e) {
-				return "Lo sentimos, ocurrio un error al generar la consulta ".$g->getMessage();
+				return "Lo sentimos, ocurrio un error al generar la consulta ".$e->getMessage();
 			}
 		}
 	}

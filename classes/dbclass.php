@@ -24,7 +24,7 @@
 					exit;
 				}
 				$this->conexion->set_charset(DBCHARSET);
-				return $this->conexion;
+				echo $this->conexion;
 			} catch (Exception $e) {
 				echo "excepción a la hora de generar la conexion";
 				exit;
