@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="es">
   <meta charset="UTF-8">
   <title>Sistema de Control de Beneficiarios</title>
   <meta name="description" content="Sistema de Control de Beneficiarios para mejorar el control de los recursos asignados.">
@@ -54,7 +54,7 @@
 <div class="left-panel">
 <div class="left-panel-in">
 <h2 class="title">Alta de Dependencia</h2>
-    <form class="form-horizontal">
+    <form class="form-horizontal" method="post" action="../controllers/controladordependencia.php">
 		<!--Nombre de la dependecia-->
 		<div class="control-group">
 		  <label class="control-label" for="singlebutton">Nombre</label>
@@ -98,6 +98,8 @@
         <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
 		  </div>
 		</div>
+    <input type="hidden" name="bandera" id="bandera" value="altadependencia">
+    <input type="hidden" name="banderatipo" id="banderatipo" value="alta">
 	</form>
 </div>
 </div>

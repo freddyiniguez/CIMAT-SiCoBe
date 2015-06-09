@@ -1,15 +1,9 @@
 <?php
 	require_once "dbclass.php";
-
-	/**
-	* 
-	*/
 	class Generica extends Dbclass
 	{
-		
 		function __construct()
 		{
-			# code...
 			parent::__construct();
 		}
 
@@ -17,7 +11,6 @@
 		{
 			switch ($metadata) {
 				case 'login':
-					# code...
 					 if(self::loginUser($data) == 1){
 					 	echo "Logueado exitosamente";
 					 }
@@ -27,10 +20,7 @@
 					 }
 					break;
 				case 'add':
-					# code...
-					echo self::addMethod($data);
 					if (self::addMethod($data) > 0) {
-						# code...
 						echo "Datos insertados correctamente";
 					}
 					else
@@ -38,8 +28,9 @@
 						echo "Hubo un error al insertar los datos";
 					}
 					break;
+				case 'mod':
+					break;
 				default:
-					# code...
 					break;
 			}
 
@@ -75,39 +66,30 @@
 		//metodo que agregará datos generico a las tablas
 		protected function addMethod($valueMethod= array())
 		{
-			# code...
 			foreach ($valueMethod as $key => $value) $$key = $value;
 			switch ($bandera) {
 				case 'altadependencia':
-					# code...
-					 $sql = "INSERT INTO dependencia(Nombre, Direccion, Telefono, Responsable, Correo) 
-					VALUES ('".$dependecia."','".$direccion."','".$telefono."','".$titular."','".$correo."')";
+					 $sql = "INSERT INTO dependencia (Nombre, Direccion, Telefono, Responsable, Correo) 
+					VALUES ('".utf8_decode($txtDependencia)."','".utf8_decode($txtDireccion)."','".$txtTelefono."','".utf8_decode($txtTitular)."','".$txtEmail."')";
 					break;
 				case 'altaprograma':
-					# code...
 					 $sql ="INSERT INTO programa( Nombre, Descripcion, Responsable, Poblacion_objetivo, Sector, Anio_inicio, Iddependecia, Convocatoria) 
 					VALUES ('".$nombreprograma."','".$descripcionprograma."','".$responsableprograma."','".$poblacionobjetivo."','".$sectorprograma."','".$anioinicio."','".$dependencia."','http://www.google.com')";
 					break;
 				default:
-					$sql ="sddsajk";
-					# code...
 					break;
 			}
-				//generamos una excepción para poder obtener algún error inesperado;
-					try {
-						
-						$resultado = $this->conexion->query($sql);
-						if (!$resultado) {
-							# code...
-							throw new Exception("Error en la Base de datos [{$this->conexion->errno}] {$this->conexion->error}", 1);
-						}
-						else
-						$lastId = $this->conexion->insert_id;
-					
-						return $lastId;
-					} catch (Exception $e) {
-						return "Lo sentimos, ocurrio un error al generar la consulta ".$g->getMessage();
-					}
+			try {	
+				$resultado = $this->conexion->query($sql);
+				if (!$resultado) {
+					throw new Exception("Error en la Base de datos [{$this->conexion->errno}] {$this->conexion->error}", 1);
+				}
+				else
+				$lastId = $this->conexion->insert_id;
+				return $lastId;
+			} catch (Exception $e) {
+				return "Lo sentimos, ocurrio un error al generar la consulta ".$g->getMessage();
+			}
 		}
 	}
 ?>
