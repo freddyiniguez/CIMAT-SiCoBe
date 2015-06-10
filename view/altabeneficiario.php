@@ -1,3 +1,18 @@
+<?php 
+    require_once "../classes/classuser.php";
+    $dependencia = new Generica();
+    $var = $dependencia->selectMethod("selectprograma");
+
+    // Retorna valores get
+    $retVal = (isset($_GET['act'])) ? $_GET['act'] : '' ;
+    if ($retVal == 'ok') {
+      ?>
+      <script type="text/javascript">
+        alert('Beneficiario agregado correctamente');
+      </script>
+      <?php
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,8 +72,23 @@
 <div class="left-panel-in">
 <h2 class="title">Alta de Beneficiario</h2>
     <form class="form-horizontal" method="post" action="../controllers/controladorbeneficiario.php">
-
 <br>
+<!-- Select Basic -->
+<div class="control-group">
+  <label class="control-label" for="selectbasic">Programa</label>
+  <div class="controls">
+    <select id="selectbasic" name="selPrograma" class="input-xlarge">
+      <option>Selecciona programa</option>
+      <?php
+        foreach ($var as $key) {
+      ?>
+      <option value="<?php echo $key['Idprograma'];?>"><?php echo utf8_encode($key['Nombre']);?></option>
+      <?php
+       }
+      ?>
+    </select>
+  </div>
+</div>
 <!-- Text input-->
 <div class="control-group">
   <label class="control-label" for="txtNombre">Nombre</label>

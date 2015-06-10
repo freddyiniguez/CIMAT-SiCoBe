@@ -1,3 +1,14 @@
+<?php 
+    // Retorna valores get
+    $retVal = (isset($_GET['act'])) ? $_GET['act'] : '' ;
+    if ($retVal == 'ok') {
+      ?>
+      <script type="text/javascript">
+        alert('Dependencia agregada correctamente.');
+      </script>
+      <?php
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head lang="es">

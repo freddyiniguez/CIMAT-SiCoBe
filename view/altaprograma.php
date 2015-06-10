@@ -6,12 +6,10 @@
     // Retorna valores get
     $retVal = (isset($_GET['act'])) ? $_GET['act'] : '' ;
     if ($retVal == 'ok') {
-      # code...
       ?>
       <script type="text/javascript">
         alert('Programa agregado correctamente');
       </script>
-      
       <?php
     }
 ?>
