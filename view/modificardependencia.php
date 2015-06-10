@@ -108,6 +108,8 @@
         <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
 		  </div>
 		</div>
+    <input type="hidden" name="bandera" id="bandera" value="modificardependencia">
+    <input type="hidden" name="banderatipo" id="banderatipo" value="modificar">
 	</form>
 </div>
 </div>

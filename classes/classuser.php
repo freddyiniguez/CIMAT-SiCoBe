@@ -26,11 +26,11 @@
 					break;
 				case 'add':
 					if (self::addMethod($data) != -1) {
-						echo "Datos insertados correctamente";
+						return "true";
 					}
 					else
 					{
-						echo "Hubo un error al insertar los datos";
+						return "false";
 					}
 					break;
 				case 'mod':
@@ -86,7 +86,7 @@
 					break;
 				case 'altaprograma':
 					$sql ="INSERT INTO programa( Nombre, Descripcion, Responsable, Poblacion_objetivo, Sector, Anio_inicio, Iddependecia, Convocatoria) 
-					VALUES ('".utf8_decode($txtNombre)."','".utf8_decode($txtDescripcion)."','".utf8_decode($txtResponsable)."','".utf8_decode($txtPoblacion)."','".utf8_decode($txtSector)."','".$anioinicio."','".$selDependencia."','".$URL."')";
+					VALUES ('".utf8_decode($txtNombre)."','".utf8_decode($txtDescripcion)."','".utf8_decode($txtResponsable)."','".utf8_decode($txtPoblacion)."','".utf8_decode($txtSector)."','".$anioinicio."','".$selDependencia."','".$txtUrl."')";
 					break;
 				case 'altabeneficiario':
 					$sql ="INSERT INTO beneficiario( Rfc, Curp, Nombre, Apellidos, Domicilio, Telefonos, Correo, Estado) 
@@ -153,6 +153,49 @@
 					throw new Exception("Error en la Base de datos [{$this->conexion->errno}] {$this->conexion->error}", 1);
 				}
 				return $this->conexion->affected_rows;
+			} catch (Exception $e) {
+				return "Lo sentimos, ocurrio un error al generar la consulta ".$e->getMessage();
+			}
+
+		}
+
+		/* 
+		* Método selectMethod.
+		* Soporta las consultas a los catálogos del sistema.
+		*/
+		public function selectMethod($qry)
+		{
+			$arreglo = array();
+
+			switch ($qry) {
+				case 'selectprograma':
+					# code...
+					$sql = "SELECT Idprograma, Nombre, Responsable, Poblacion_objetivo, Sector, Anio_inicio, Iddependecia, Convocatoria FROM programa";
+					break;
+				case 'selectdependencia':
+					# code...
+					$sql = "SELECT Iddependecia, Nombre, Direccion, Telefono, Responsable, Correo FROM dependencia WHERE 1";
+					break;
+				default:
+					# code...
+					break;
+			}
+			# code... generamos la consulta
+
+			try {
+				$consulta = $this->conexion->query($sql);
+				if (!$consulta) {
+					# code...
+					throw new Exception("Error en la Base de datos [{$this->conexion->errno}] {$this->conexion->error}", 1);
+					
+				}
+				//recorremos el arreglo y lo enviamos a uno asociativo
+				while ($rows = $consulta->fetch_assoc()) {
+					# code...
+					$arreglo[] = $rows;
+				}
+
+				return $arreglo;
 			} catch (Exception $e) {
 				return "Lo sentimos, ocurrio un error al generar la consulta ".$e->getMessage();
 			}

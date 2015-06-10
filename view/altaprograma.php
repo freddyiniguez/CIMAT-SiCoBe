@@ -1,3 +1,20 @@
+<?php 
+    require_once "../classes/classuser.php";
+    $dependencia = new Generica();
+    $var = $dependencia->selectMethod("selectdependencia");
+
+    // Retorna valores get
+    $retVal = (isset($_GET['act'])) ? $_GET['act'] : '' ;
+    if ($retVal == 'ok') {
+      # code...
+      ?>
+      <script type="text/javascript">
+        alert('Programa agregado correctamente');
+      </script>
+      
+      <?php
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,8 +80,14 @@
   <div class="controls">
     <select id="selectbasic" name="selDependencia" class="input-xlarge">
       <option>Selecciona dependencia</option>
-      <option value="1">Dirección Tecnológica</option>
-      <option value="2">Dirección de Buen Gobierno</option>
+      <?php
+        foreach ($var as $key) {
+          # code...
+      ?>
+      <option value="<?php echo $key['Iddependecia'];?>"><?php echo utf8_encode($key['Nombre']);?></option>
+      <?php
+       }
+      ?>
     </select>
   </div>
 </div>
