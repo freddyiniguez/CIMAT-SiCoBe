@@ -127,12 +127,12 @@
   <label class="control-label" for="rbnEstado">Estado</label>
   <div class="controls">
     <label class="radio inline" for="rbnEstado-0">
-      <input type="radio" name="rbnEstado" id="rbnEstado-0" value="0" checked="checked">
-      0
+      <input type="radio" name="rbnEstado" id="rbnEstado-0" value="Activo" checked="checked">
+      Activo
     </label>
     <label class="radio inline" for="rbnEstado-1">
-      <input type="radio" name="rbnEstado" id="rbnEstado-1" value="1">
-      1
+      <input type="radio" name="rbnEstado" id="rbnEstado-1" value="Vetado">
+      Vetado
     </label>
   </div>
 </div>
