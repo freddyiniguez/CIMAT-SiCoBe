@@ -1,6 +1,5 @@
 <?php
 	require_once "dbclass.php";
-
 	/* 
 	* Clase Generica.
 	* Única clase para la actualización (altas, cambios y consultas) de los catálogos.
@@ -46,22 +45,17 @@
 		*/
 		protected function loginUser($dats= array())
 		{
-			# code...
 			foreach ($dats as $key => $value) $$key = $value;
 			$contrasena = md5($contrasena);
-
 			$sql = "SELECT Username, Password FROM usuario WHERE Username = '".$this->conexion->real_escape_string($usuario)."' 
 			AND Password = '".$this->conexion->real_escape_string($contrasena)."'";
 			try {
 				$resultado = $this->conexion->query($sql);
 				if (!$resultado) {
-					# code...
 					throw new Exception("Error en la Base de datos [{$this->conexion->errno}] {$this->conexion->error}", 1);
-					
 				}
 				$count = $resultado->num_rows;
 				if ($count > 0) {
-					# code...
 					$mensaje = 1;
 				}
 				else
@@ -122,7 +116,7 @@
 		*/
 		protected function updateMethod($updateValue = array())
 		{
-			# code... extraemos los valores del arreglo post o get
+			# Extraemos los valores del arreglo post o get
 			foreach ($updateValue as $key => $value) $$key = $value;
 			switch ($bandera) {
 				case 'modificardependencia':
@@ -133,23 +127,19 @@
 					(isset($txtEmail)) ? strip_tags($txtEmail) : '' ;
 					(isset($Iddependecia)) ? strip_tags($Iddependecia) : '' ;
 
-					#preparamos la consulta usando sentencias preparadas
+					# Preparamos la consulta usando sentencias preparadas
 					$sql  = "UPDATE dependencia SET  Nombre = '".$txtNombre."',Direccion ='".$txtDireccion."', Telefono ='".$txtTelefono."', Responsable ='".$txtTitular."', Correo = '".$txtEmail."'
 					 WHERE Iddependecia = '".$Iddependecia."'";
 					break;
 				case 'modificarbeneficiario':
-					# code...
 					$sql = "UPDATE beneficiario SET Rfc='".$txtRfc."', Curp ='".$txtCurp."', Nombre ='".$txtNombre."',Apellidos ='".$txtApellidos."', Domicilio = '".$txtDomicilio."',Telefonos ='".$txtTelefono."', Correo ='".$txtEmail."' WHERE 1";
 					break;
 				default:
-					# code...
 					break;
 			}
-
 			try {
 				$result = $this->conexion->query($sql);
 				if (!$result) {
-					# code...
 					throw new Exception("Error en la Base de datos [{$this->conexion->errno}] {$this->conexion->error}", 1);
 				}
 				return $this->conexion->affected_rows;
@@ -169,37 +159,27 @@
 
 			switch ($qry) {
 				case 'selectprograma':
-					# code...
 					$sql = "SELECT Idprograma, Nombre, Responsable, Poblacion_objetivo, Sector, Anio_inicio, Iddependecia, Convocatoria FROM programa";
 					break;
 				case 'selectdependencia':
-					# code...
 					$sql = "SELECT Iddependecia, Nombre, Direccion, Telefono, Responsable, Correo FROM dependencia WHERE 1";
 					break;
 				default:
-					# code...
 					break;
 			}
-			# code... generamos la consulta
-
 			try {
 				$consulta = $this->conexion->query($sql);
 				if (!$consulta) {
-					# code...
 					throw new Exception("Error en la Base de datos [{$this->conexion->errno}] {$this->conexion->error}", 1);
-					
 				}
-				//recorremos el arreglo y lo enviamos a uno asociativo
+				# Recorremos el arreglo y lo enviamos a uno asociativo
 				while ($rows = $consulta->fetch_assoc()) {
-					# code...
 					$arreglo[] = $rows;
 				}
-
 				return $arreglo;
 			} catch (Exception $e) {
 				return "Lo sentimos, ocurrio un error al generar la consulta ".$e->getMessage();
 			}
-
 		}
 	}
 ?>
