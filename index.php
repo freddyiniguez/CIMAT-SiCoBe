@@ -26,6 +26,8 @@
         <ul class="fallback">
           <li><a href="view/altadependencia.php">Agregar dependencia</a></li>
           <li><a href="view/modificardependencia.php">Modificar dependencia</a></li>
+          <li><a href="view/altaencargado.php">Agregar encargado</a></li>
+          <li><a href="view/modificarencargado.php">Modificar encargado</a></li>
           <li><a href="view/informaciondependencia.php">Información</a></li>
         </ul>
       </li>
@@ -55,58 +57,21 @@
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-<h2 class="title">Welcome to our site</h2>
+<h2 class="title">Bienvenido a SiCoBe</h2>
 <p>&nbsp;</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-id purus nisi, in rutrum nunc. Donec non orci eros, ut sollicitudin
-risus. Vivamus at lacinia enim. Nam tincidunt nisl eget erat
-sollicitudin vitae accumsan felis eleifend. Phasellus eu ante non magna
-egestas tincidunt ut varius lorem. Nunc ornare feugiat ligula, ut
-tincidunt enim porta nec. Curabitur interdum, ante non vehicula semper,
-quam arcu condimentum velit, at elementum justo nisi eget urna. Fusce
-vulputate malesuada euismod. Morbi condimentum tincidunt molestie. In
-vulputate neque et augue posuere fringilla. Nunc nec tempus nibh.
-Integer interdum suscipit urna, nec interdum nisi aliquet et. Quisque
-augue tortor, porta et malesuada dapibus, tempor ut mauris. Nullam
-dictum posuere ante at tincidunt. Praesent sed lorem enim, vitae
-scelerisque dui. Etiam ac purus est, et accumsan sem. In hac habitasse
-platea dictumst. Maecenas a dui leo, sit amet dignissim nisi. </p>
-<p>&nbsp;</p>
-Nam sit amet arcu nisi. Proin sagittis, nisi sed sollicitudin
-elementum, urna justo porta enim, nec semper massa nunc non eros.
-Nullam molestie, quam quis egestas porta, ligula elit laoreet ante, a
-convallis lectus sem volutpat urna. Donec congue purus placerat quam
-sodales quis suscipit leo ullamcorper. Quisque vulputate metus vel
-risus aliquam dictum. Pellentesque habitant morbi tristique senectus et
-netus et malesuada fames ac turpis egestas. Vestibulum eget justo et
-orci viverra pulvinar eu non magna. Nam vehicula convallis erat
-suscipit laoreet. Phasellus at nisl ut diam aliquam ultricies non vel
-quam. Donec mattis porttitor ante lacinia dapibus. Cras vitae massa
-sem, ac pharetra felis. Praesent tincidunt interdum neque, et semper
-nulla suscipit a. Nullam ultricies varius orci, nec pharetra quam
-accumsan id. Donec vel nulla quis sem aliquet suscipit. Aenean at
-lectus mauris, non tristique dui. Curabitur eu diam mi, eget blandit
-dolor.
+<p>La se cretaría de economía implementa el SiCoBe (Sistema para el Control de Beneficiarios)
+con la intención de brindar un mejor servicio a nuestros usuarios interesados en ingresar a algún
+programa de apoyo administrados por la Secretaría. </p>
+
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h2 class="title">Recent articles<br>
+<h2 class="title">Enlaces de interés<br>
 </h2>
 <p>&nbsp;</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-id purus nisi, in rutrum nunc. Donec non orci eros, ut sollicitudin
-risus. Vivamus at lacinia enim. Nam tincidunt nisl eget erat
-sollicitudin vitae accumsan felis eleifend. Phasellus eu ante non magna
-egestas tincidunt ut varius lorem. Nunc ornare feugiat ligula, ut
-tincidunt enim porta nec. Curabitur interdum, ante non vehicula semper,
-quam arcu condimentum velit, at elementum justo nisi eget urna. Fusce
-vulputate malesuada euismod. Morbi condimentum tincidunt molestie. In
-vulputate neque et augue posuere fringilla. Nunc nec tempus nibh.
-Integer interdum suscipit urna, nec interdum nisi aliquet et. Quisque
-augue tortor, porta et malesuada dapibus, tempor ut mauris. Nullam
-dictum posuere ante at tincidunt. Praesent sed lorem enim, vitae
-scelerisque dui. Etiam ac purus est, et accumsan sem. In hac habitasse
-platea dictumst. Maecenas a dui leo, sit amet dignissim nisi.<br>
-<br>
+<p><a id="enlace_index" target="_blank" href="http://10.100.60.85/limesurvey/index.php?r=survey/index/sid/941322/lang/es">Encuesta del Consejo de Alto Nivel para la Cooperación Regulatoria México - Estados Unidos<br></a>
+<br><a id="enlace_index" target="_blank" href="http://www.economia.gob.mx/comunidad-negocios/industria-y-comercio/instrumentos-de-comercio-exterior/immex">Industria Manufacturera Maquiladora y de Servicios de Exportación (IMMEX)<br></a>
+<br><a id="enlace_index" target="_blank" href="http://www.economia.gob.mx/images/corredores_publicos_documento.pdf">Martes de asesorías jurídicas gratuitas en materia de Correduría Pública<br></a>
+<br><a id="enlace_index" target="_blank" href="https://www.inadem.gob.mx/">Instituto Nacional del Emprendedor (INADEM)<br></a>
 </p>
 </div>
 </div>
@@ -116,15 +81,15 @@ platea dictumst. Maecenas a dui leo, sit amet dignissim nisi.<br>
 <div class="right-panel-in">
 <h3>Áreas General</h3>
 <ul>
-  <li><a href="#">Ciencias Políticas<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Políticas<br>
     </a></li>
-  <li><a href="#">Ciencias Económicas<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Económicas<br>
     </a></li>
-  <li><a href="#">Ciencias Sociales y Administrativas<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Sociales y Administrativas<br>
     </a></li>
-  <li><a href="#">Ingeniería y Tecnología<br>
+  <li><a href="http://www.economia.gob.mx/">Ingeniería y Tecnología<br>
     </a></li>
-  <li><a href="#">Ciencias Jurídicas y Derecho<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Jurídicas y Derecho<br>
     </a></li>
 </ul>
 </div>

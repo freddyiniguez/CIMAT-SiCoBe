@@ -56,32 +56,15 @@
 <div class="left-panel">
 <div class="left-panel-in">
 <h2 class="title">Programas de la Secretaría de Economía</h2>
-    <form class="form-horizontal">
-      <table style="width:100%">
-  <thead>
-    <tr>
-      <th>Nombre</th>
-      <th>URL</th>
-      <th>Responsable</th>
-      <th>Sector</th>
-      <th>Año inicio</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>Certificaciones MexicoFISRT</td>
-    <td><a href="http://www.mexico-first.org/">México FIRST</a></td>    
-    <td>Miguel Gómez</td>
-    <td>Educativo</td>
-    <td>2013</td>
-  </tr>
-  <tr>
-    <td>PROIAT</td>
-    <td><a href="http://www.economia.gob.mx/files/comunidad_negocios/industria_comercio/Proiat/convocatoria_PROIAT_2015.pdf">PROIAT</a></td>    
-    <td>Lic. José Luis Martinez</td>
-    <td>Tecnológico</td>
-    <td>2011</td>
-  </tr>
-</table>
+  <form class="form-horizontal">
+    <p>&nbsp;</p>
+    <p><a id="enlace_index" target="_blank" href="http://www.economia.gob.mx/comunidad-negocios/industria-y-comercio/programa-de-apoyo-para-la-mejora-tecnologica-de-la-industria-de-alta-tecnologia-proiat">Programa de Apoyo para la Mejora Tecnológica de la Industria de Alta Tecnología (PROIAT)<br></a>
+      <br><a id="enlace_index" target="_blank" href="http://www.prologyca.economia.gob.mx/">Programa de Competitividad en Logística y Centrales de Abasto (PROLOGYCA)<br></a>
+      <br><a id="enlace_index" target="_blank" href="http://www.economia.gob.mx/conoce-la-se/programas-se/programa-de-desarrollo-innovador-2013-2018/">Programa de Desarrollo Innovador<br></a>
+      <br><a id="enlace_index" target="_blank" href="http://www.prosoft.economia.gob.mx/">Programa para el Desarrollo de la Industria del Software (PROSOFT)<br></a>
+      <br><a id="enlace_index" target="_blank" href="http://www.pronafim.gob.mx/">Programa Nacional de Financiamiento al Microempresario<br></a>
+      <br><a id="enlace_index" target="_blank" href="http://www.conacyt.mx/index.php/fondos-y-apoyos/programa-de-estimulos-a-la-innovacion">Programa de Estímulos a la Innovación<br></a>
+    </p>
 	</form>
 </div>
 </div>
@@ -89,15 +72,15 @@
 <div class="right-panel-in">
 <h3>Áreas General</h3>
 <ul>
-  <li><a href="#">Ciencias Políticas<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Políticas<br>
     </a></li>
-  <li><a href="../index.html#">Ciencias Económicas<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Económicas<br>
     </a></li>
-  <li><a href="../index.html#">Ciencias Sociales y Administrativas<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Sociales y Administrativas<br>
     </a></li>
-  <li><a href="../index.html#">Ingeniería y Tecnología<br>
+  <li><a href="http://www.economia.gob.mx/">Ingeniería y Tecnología<br>
     </a></li>
-  <li><a href="../index.html#">Ciencias Jurídicas y Derecho<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Jurídicas y Derecho<br>
     </a></li>
 </ul>
 </div>

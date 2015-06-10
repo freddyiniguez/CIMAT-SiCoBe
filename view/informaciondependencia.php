@@ -56,32 +56,28 @@
 <div class="left-panel">
 <div class="left-panel-in">
 <h2 class="title">Dependencias de la Secretaría de Economía</h2>
-    <form class="form-horizontal">
-      <table style="width:100%">
-  <thead>
-    <tr>
-      <th>Nombre</th>
-      <th>Dirección</th>
-      <th>Teléfono</th>
-      <th>Responsable</th>
-      <th>e-mail</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>Dirección Tecnológica</td>
-    <td>Zacatecas, Zacatecas</td>    
-    <td>4929200000</td>
-    <td>Lic. José Luis Márquez</td>
-    <td>direcciontecnologica@sezac.gob.mx</td>
-  </tr>
-  <tr>
-    <td>Dirección de Buen Gobierno</td>
-    <td>Zacatecas, Zacatecas</td>    
-    <td>4672600000</td>
-    <td>Lic. José Miguel Hernández</td>
-    <td>buengobiernozac@sezac.gob.mx</td>
-  </tr>
-</table>
+  <form class="form-horizontal">
+    <p>&nbsp;</p>
+    <p> DIRECCIÓN GENERAL DE EVALUACIÓN DE PROYECTOS ECONÓMICOS
+      <pre style='display:inline'>Encargado: Lic. Manuel López Leyva <br><br>Domicilio: Zacatecas, Zac. <br><br>Teléfono: (492) 921 0001 <br><br>e-mail: direconomica@sezac.gob</pre>
+    </p>
+    <p>&nbsp;</p>
+    <p> DIRECCIÓN GENERAL DE RELACIONES INTERINSTITUCIONALES
+      <pre style='display:inline'>Encargado: Lic. Maricela Silva M. <br><br>Domicilio: Zacatecas, Zac. <br><br>Teléfono: (492) 921 0002 <br><br>e-mail: dirrelaciones@sezac.gob</pre>
+    </p>
+    <p>&nbsp;</p>
+    <p> DIRECCIÓN GENERAL DE VINCULACIÓN CON EL SECTOR COORDINADO
+      <pre style='display:inline'>Encargado: Lic. Guadalupe Rojas <br><br>Domicilio: Zacatecas, Zac. <br><br>Teléfono: (492) 921 0003 <br><br>e-mail: dirvinculación@sezac.gob</pre>
+    </p>
+    <p>&nbsp;</p>
+    <p> DIRECCIÓN GENERAL ADJUNTA DE PROYECTOS ESTRATÉGICOS
+      <pre style='display:inline'>Encargado: Lic. José Luis Méndez <br><br>Domicilio: Zacatecas, Zac. <br><br>Teléfono: (492) 921 0004 <br><br>e-mail: direstrategica@sezac.gob</pre>
+    </p>
+    <p>&nbsp;</p>
+    <p> DIRECCIÓN GENERAL ADJUNTA PARA LA PRODUCTIVIDAD Y COMPETITIVIDAD
+      <pre style='display:inline'>Encargado: Lic. Ricardo Pérez <br><br>Domicilio: Zacatecas, Zac. <br><br>Teléfono: (492) 921 0005 <br><br>e-mail: dirproductividad@sezac.gob</pre>
+    </p>
+    
 	</form>
 </div>
 </div>
@@ -89,15 +85,15 @@
 <div class="right-panel-in">
 <h3>Áreas General</h3>
 <ul>
-  <li><a href="#">Ciencias Políticas<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Políticas<br>
     </a></li>
-  <li><a href="../index.html#">Ciencias Económicas<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Económicas<br>
     </a></li>
-  <li><a href="../index.html#">Ciencias Sociales y Administrativas<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Sociales y Administrativas<br>
     </a></li>
-  <li><a href="../index.html#">Ingeniería y Tecnología<br>
+  <li><a href="http://www.economia.gob.mx/">Ingeniería y Tecnología<br>
     </a></li>
-  <li><a href="../index.html#">Ciencias Jurídicas y Derecho<br>
+  <li><a href="http://www.economia.gob.mx/">Ciencias Jurídicas y Derecho<br>
     </a></li>
 </ul>
 </div>

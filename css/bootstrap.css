@@ -6337,6 +6337,16 @@ nav ul li:hover ul.fallback {display:block;}
 .right-panel-in ul {
   list-style-type: none;
 }
+
+a#enlace_index {
+color: #009933; 
+text-decoration: none;
+}
+
+a#enlace_index:hover {
+  text-decoration: underline
+}
+
 .right-panel-in ul li {
   padding-top: 8px;
   padding-bottom: 8px;
