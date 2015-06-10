@@ -1,3 +1,20 @@
+<?php 
+    require_once "../classes/classuser.php";
+    $dependencia = new Generica();
+    $var = $dependencia->selectMethod("selectdependencia");
+
+    // Retorna valores get
+    $retVal = (isset($_GET['act'])) ? $_GET['act'] : '' ;
+    if ($retVal == 'ok') {
+      # code...
+      ?>
+      <script type="text/javascript">
+        alert('Encargado agregado correctamente');
+      </script>
+      
+      <?php
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,14 +74,21 @@
 <div class="left-panel-in">
 <h2 class="title">Alta de Encargado</h2>
 <form class="form-horizontal" method="post" action="../controllers/controladorencargado.php">
+
 <!-- Select Basic -->
 <div class="control-group">
   <label class="control-label" for="selectbasic">Dependencia</label>
   <div class="controls">
     <select id="selectbasic" name="selDependencia" class="input-xlarge">
       <option>Selecciona dependencia</option>
-      <option value="1">Dirección Tecnológica</option>
-      <option value="2">Dirección de Buen Gobierno</option>
+      <?php
+        foreach ($var as $key) {
+          # code...
+      ?>
+      <option value="<?php echo $key['Iddependecia'];?>"><?php echo utf8_encode($key['Nombre']);?></option>
+      <?php
+       }
+      ?>
     </select>
   </div>
 </div>

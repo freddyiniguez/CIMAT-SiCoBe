@@ -92,6 +92,10 @@
 					$sql ="INSERT INTO beneficiario( Rfc, Curp, Nombre, Apellidos, Domicilio, Telefonos, Correo, Estado) 
 					VALUES ('".$txtRfc."','".$txtCurp."','".utf8_decode($txtNombre)."','".utf8_decode($txtApellidos)."','".utf8_decode($txtDomicilio)."','".$txtTelefono."','".$txtEmail."','".$rbnEstado."')";
 					break;
+				case 'altaencargado':
+					$sql ="INSERT INTO encargado( Iddependecia, Noempleado, Nombre, Apellidos, Rfc, Curp, Sexo, Telefonos, Correo, usuario_Idusuario) 
+					VALUES ('".$selDependencia."','".$txtNoempleado."','".utf8_decode($txtNombre)."','".utf8_decode($txtApellidos)."','".$txtRfc."','".$txtCurp."','".$rbnSexo."','".$txtTelefono."','".$txtEmail."','1')";
+					break;
 				case 'altaaniofiscal':
 					$sql ="INSERT INTO anio_fiscal( Anio, Presupuesto) 
 					VALUES ('".$txtAnio."','".$txtpresupuesto."')";
