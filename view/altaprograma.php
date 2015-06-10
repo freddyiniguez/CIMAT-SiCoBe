@@ -126,6 +126,14 @@
   </div>
 </div>
 
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="urlprograma">URL</label>
+  <div class="controls">
+    <input id="urlprograma" name="txtUrl" class="input-xlarge" type="text" required="">
+  </div>
+</div>
+
 <!-- Button (Double) -->
 <div class="control-group">
   <label class="control-label" for="add"></label>

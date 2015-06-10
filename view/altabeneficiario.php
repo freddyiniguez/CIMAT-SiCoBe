@@ -54,7 +54,7 @@
 <div class="left-panel">
 <div class="left-panel-in">
 <h2 class="title">Alta de Beneficiario</h2>
-    <form class="form-horizontal">
+    <form class="form-horizontal" method="post" action="../controllers/controladorbeneficiario.php">
 
 <br>
 <!-- Text input-->
@@ -125,12 +125,12 @@
   <label class="control-label" for="rbnEstado">Estado</label>
   <div class="controls">
     <label class="radio inline" for="rbnEstado-0">
-      <input type="radio" name="rbnEstado" id="rbnEstado-0" value="Activo" checked="checked">
-      Activo
+      <input type="radio" name="rbnEstado" id="rbnEstado-0" value="0" checked="checked">
+      0
     </label>
     <label class="radio inline" for="rbnEstado-1">
-      <input type="radio" name="rbnEstado" id="rbnEstado-1" value="Vetado">
-      Vetado
+      <input type="radio" name="rbnEstado" id="rbnEstado-1" value="1">
+      1
     </label>
   </div>
 </div>
@@ -143,6 +143,8 @@
     <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>
+    <input type="hidden" name="bandera" id="bandera" value="altabeneficiario">
+    <input type="hidden" name="banderatipo" id="banderatipo" value="alta">
 </form>
 </div>
 </div>

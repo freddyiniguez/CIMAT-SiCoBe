@@ -54,7 +54,7 @@
 <div class="left-panel">
 <div class="left-panel-in">
 <h2 class="title">Alta de Año Fiscal</h2>
-    <form class="form-horizontal">
+    <form class="form-horizontal" method="post" action="../controllers/controladoraniofiscal.php">
 <!-- Text input-->
 <div class="control-group">
   <br>
@@ -81,6 +81,8 @@
     <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>
+    <input type="hidden" name="bandera" id="bandera" value="altaaniofiscal">
+    <input type="hidden" name="banderatipo" id="banderatipo" value="alta">
 </form>
 </div>
 </div>

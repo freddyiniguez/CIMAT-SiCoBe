@@ -55,7 +55,7 @@
 <div class="left-panel-in">
 <h2 class="title">Alta de Organización</h2>
 
-<form class="form-horizontal">
+<form class="form-horizontal" method="post" action="../classes/controladororganizacion.php">
 <!-- Text input-->
 <div class="control-group">
   <label class="control-label" for="txtRFC">RFC</label>
@@ -132,6 +132,8 @@
     <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>
+    <input type="hidden" name="bandera" id="bandera" value="altabeneficiario">
+    <input type="hidden" name="banderatipo" id="banderatipo" value="alta">
 </form>
 
 </div>

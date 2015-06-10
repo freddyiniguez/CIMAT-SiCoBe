@@ -1,7 +1,7 @@
 <?php
 	/* 
 	* Controlador.
-	* Permite instanciar la clase encargada de actualizar un programa.
+	* Permite instanciar la clase encargada de actualizar un beneficiario.
 	*/
 	require_once "../classes/classuser.php";
 	$tipoTransaccion = $_POST["banderatipo"];

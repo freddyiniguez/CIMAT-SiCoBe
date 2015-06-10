@@ -20,6 +20,7 @@
 					 }
 					break;
 				case 'add':
+					echo self::addMethod($data);
 					if (self::addMethod($data) > 0) {
 						echo "Datos insertados correctamente";
 					}
@@ -33,8 +34,6 @@
 				default:
 					break;
 			}
-
-			
 		}
 		protected function loginUser($dats= array())
 		{
@@ -73,8 +72,16 @@
 					VALUES ('".utf8_decode($txtDependencia)."','".utf8_decode($txtDireccion)."','".$txtTelefono."','".utf8_decode($txtTitular)."','".$txtEmail."')";
 					break;
 				case 'altaprograma':
-					 $sql ="INSERT INTO programa( Nombre, Descripcion, Responsable, Poblacion_objetivo, Sector, Anio_inicio, Iddependecia, Convocatoria) 
-					VALUES ('".$txtNombre."','".$txtDescripcion."','".$txtResponsable."','".$txtPoblacion."','".$txtSector."','".$anioinicio."','".$selDependencia."','http://www.google.com')";
+					$sql ="INSERT INTO programa( Nombre, Descripcion, Responsable, Poblacion_objetivo, Sector, Anio_inicio, Iddependecia, Convocatoria) 
+					VALUES ('".utf8_decode($txtNombre)."','".utf8_decode($txtDescripcion)."','".utf8_decode($txtResponsable)."','".utf8_decode($txtPoblacion)."','".utf8_decode($txtSector)."','".$anioinicio."','".$selDependencia."','".$URL."')";
+					break;
+				case 'altabeneficiario':
+					$sql ="INSERT INTO beneficiario( Rfc, Curp, Nombre, Apellidos, Domicilio, Telefonos, Correo, Estado) 
+					VALUES ('".$txtRfc."','".$txtCurp."','".utf8_decode($txtNombre)."','".utf8_decode($txtApellidos)."','".utf8_decode($txtDomicilio)."','".$txtTelefono."','".$txtEmail."','".$rbnEstado."')";
+					break;
+				case 'altaaniofiscal':
+					$sql ="INSERT INTO anio_fiscal( Anio, Presupuesto) 
+					VALUES ('".$txtAnio."','".$txtpresupuesto."')";
 					break;
 				default:
 					break;
@@ -88,7 +95,7 @@
 				$lastId = $this->conexion->insert_id;
 				return $lastId;
 			} catch (Exception $e) {
-				return "Lo sentimos, ocurrio un error al generar la consulta ".$g->getMessage();
+				return "Lo sentimos, ocurrio un error al generar la consulta ".$e->getMessage();
 			}
 		}
 	}

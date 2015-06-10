@@ -1,9 +1,10 @@
 <?php
 	/* 
 	* Controlador.
-	* Permite instanciar la clase encargada de actualizar un programa.
+	* Permite instanciar la clase encargada de actualizar un beneficiario.
 	*/
 	require_once "../classes/classuser.php";
+	print_r($_POST);
 	$tipoTransaccion = $_POST["banderatipo"];
 		$dependencia = new Generica();
 		switch ($tipoTransaccion) {
