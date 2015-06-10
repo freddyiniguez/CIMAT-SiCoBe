@@ -1,3 +1,4 @@
+
 <?php
 	require_once "dbclass.php";
 	class Generica extends Dbclass
@@ -20,8 +21,7 @@
 					 }
 					break;
 				case 'add':
-					echo self::addMethod($data);
-					if (self::addMethod($data) > 0) {
+					if (self::addMethod($data) != -1) {
 						echo "Datos insertados correctamente";
 					}
 					else
@@ -83,6 +83,10 @@
 					$sql ="INSERT INTO anio_fiscal( Anio, Presupuesto) 
 					VALUES ('".$txtAnio."','".$txtpresupuesto."')";
 					break;
+				case 'altaorganizacion':
+					$sql ="INSERT INTO organizacion( Rfc, Nombre, Domicilio, Titular, Telefono, Correo, Estado) 
+					VALUES ('".$txtRFC."','".utf8_decode($txtNombre)."','".utf8_decode($txtDomicilio)."','".utf8_decode($txtTitular)."','".$txtTelefono."','".$txtEmail."','".$rbnEstado."')";
+					break;
 				default:
 					break;
 			}
@@ -92,7 +96,7 @@
 					throw new Exception("Error en la Base de datos [{$this->conexion->errno}] {$this->conexion->error}", 1);
 				}
 				else
-				$lastId = $this->conexion->insert_id;
+				$lastId = $this->conexion->affected_rows;
 				return $lastId;
 			} catch (Exception $e) {
 				return "Lo sentimos, ocurrio un error al generar la consulta ".$e->getMessage();
