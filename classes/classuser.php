@@ -1,6 +1,10 @@
-
 <?php
 	require_once "dbclass.php";
+
+	/* 
+	* Clase Generica.
+	* Única clase para la actualización (altas, cambios y consultas) de los catálogos.
+	*/
 	class Generica extends Dbclass
 	{
 		function __construct()
@@ -35,6 +39,11 @@
 					break;
 			}
 		}
+
+		/*
+		* Método loginUser.
+		* Encargado de la validación del usuario.
+		*/
 		protected function loginUser($dats= array())
 		{
 			# code...
@@ -62,7 +71,11 @@
 				return "Lo sentimos, ocurrio un error al generar la consulta ".$e;
 			}
 		}
-		//metodo que agregará datos generico a las tablas
+		
+		/* 
+		* Método addMethod.
+		* Encargado de realizar todas las altas de los catálogos.
+		*/
 		protected function addMethod($valueMethod= array())
 		{
 			foreach ($valueMethod as $key => $value) $$key = $value;
@@ -101,6 +114,49 @@
 			} catch (Exception $e) {
 				return "Lo sentimos, ocurrio un error al generar la consulta ".$e->getMessage();
 			}
+		}
+
+		/* 
+		* Método updateMethod.
+		* Encargo de realizar todas las actualizaciones a los catálogos.
+		*/
+		protected function updateMethod($updateValue = array())
+		{
+			# code... extraemos los valores del arreglo post o get
+			foreach ($updateValue as $key => $value) $$key = $value;
+			switch ($bandera) {
+				case 'modificardependencia':
+					(isset($txtNombre)) ? strip_tags($txtNombre) : '' ;
+					(isset($txtDireccion)) ? strip_tags($txtDireccion) : '' ;
+					(isset($txtTitular)) ? strip_tags($txtTitular) : '' ;
+					(isset($txtTelefono)) ? strip_tags($txtTelefono) : '' ;
+					(isset($txtEmail)) ? strip_tags($txtEmail) : '' ;
+					(isset($Iddependecia)) ? strip_tags($Iddependecia) : '' ;
+
+					#preparamos la consulta usando sentencias preparadas
+					$sql  = "UPDATE dependencia SET  Nombre = '".$txtNombre."',Direccion ='".$txtDireccion."', Telefono ='".$txtTelefono."', Responsable ='".$txtTitular."', Correo = '".$txtEmail."'
+					 WHERE Iddependecia = '".$Iddependecia."'";
+					break;
+				case 'modificarbeneficiario':
+					# code...
+					$sql = "UPDATE beneficiario SET Rfc='".$txtRfc."', Curp ='".$txtCurp."', Nombre ='".$txtNombre."',Apellidos ='".$txtApellidos."', Domicilio = '".$txtDomicilio."',Telefonos ='".$txtTelefono."', Correo ='".$txtEmail."' WHERE 1";
+					break;
+				default:
+					# code...
+					break;
+			}
+
+			try {
+				$result = $this->conexion->query($sql);
+				if (!$result) {
+					# code...
+					throw new Exception("Error en la Base de datos [{$this->conexion->errno}] {$this->conexion->error}", 1);
+				}
+				return $this->conexion->affected_rows;
+			} catch (Exception $e) {
+				return "Lo sentimos, ocurrio un error al generar la consulta ".$e->getMessage();
+			}
+
 		}
 	}
 ?>
