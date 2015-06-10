@@ -19,7 +19,7 @@
 <nav>
     <ul>
       <li><a href="../index.php">Home</a></li>
-      <li class="item_selected"> 
+      <li class="item_selected">
         <a href="#">Dependencias</a>
         <ul class="fallback">
           <li><a href="altadependencia.php">Agregar dependencia</a></li>
@@ -55,8 +55,17 @@
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-<h2 class="title">Alta de Encargado</h2>
-<form class="form-horizontal" method="post" action="../controllers/controladorencargado.php">
+<h2 class="title">Modificar Encargado</h2>
+<form class="form-horizontal">
+
+<!--Buscar dependencia-->
+    <div class="control-group">
+      <label class="control-label" for="singlebutton">Buscar</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" name="txtBuscar" placeholder="Nombre del encargado" required=""/>
+        <button id="singlebutton" style="margin-top: 10px" name="btnBuscar" class="btn btn-primary">Buscar</button>
+      </div>
+    </div>
 <!-- Select Basic -->
 <div class="control-group">
   <label class="control-label" for="selectbasic">Dependencia</label>
@@ -151,7 +160,7 @@
 <div class="control-group">
   <label class="control-label" for="btnAceptar"></label>
   <div class="controls">
-    <button id="btnAceptar" name="btnAceptar" class="btn btn-success">Aceptar</button>
+    <button id="btnModificar" name="btnModificar" class="btn btn-primary">Modificar</button>
     <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>
