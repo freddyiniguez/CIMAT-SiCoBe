@@ -61,9 +61,18 @@
 <div class="left-panel-in">
 <h2 class="title">Bienvenido a SiCoBe</h2>
 <p>&nbsp;</p>
-<p>La se cretaría de economía implementa el SiCoBe (Sistema para el Control de Beneficiarios)
-con la intención de brindar un mejor servicio a nuestros usuarios interesados en ingresar a algún
-programa de apoyo administrados por la Secretaría. </p>
+<p>El proyecto SiCoBe (Sistema de Control de Beneficiarios) surge con la intención de llevar un control
+de las personas y organizaciones que han resultado beneficiadas en alguno de los distintos programas de
+la Secretaría de Economía del Estado de Zacatecas (SEZAC).</p><br>
+<p>SiCoBe pretende ser una plataforma web en donde cada una de las dependencias de la Secretaría de 
+Economía pueda llevar un registro de los diferentes programas de apoyo que ofrece a la sociedad, en sus
+diferentes categorías, además de poder gestionar y dar un mejor seguimiento a la asignación de recursos
+de los programas a las personas que lo requieran.</p><br>
+<p>De tal manera, el principal objetivo de SiCoBe es identificar a los beneficiarios que han tenido un 
+apoyo para con ello elaborar una estrategia que permita la distribución de los recursos a más personas,
+dando paso a una mejor inversión de los recursos que asigna el Gobierno Federal, además de poder 
+registrar explícitamente en el sistema a aquellas personas que incumplen con la liberación de algún
+apoyo de la SEZAC.</p><br>
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
