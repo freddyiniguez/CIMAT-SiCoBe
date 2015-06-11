@@ -24,7 +24,8 @@
 					 }
 					break;
 				case 'add':
-					if (self::addMethod($data) != -1) {
+					//return self::addMethod($data); exit;
+					if (self::addMethod($data) > 0) {
 						return "true";
 					}
 					else
@@ -95,8 +96,16 @@
 					VALUES ('".$txtAnio."','".$txtpresupuesto."')";
 					break;
 				case 'altaorganizacion':
-					$sql ="INSERT INTO organizacion( Rfc, Nombre, Domicilio, Titular, Telefono, Correo, Estado) 
-					VALUES ('".$txtRFC."','".utf8_decode($txtNombre)."','".utf8_decode($txtDomicilio)."','".utf8_decode($txtTitular)."','".$txtTelefono."','".$txtEmail."','".$rbnEstado."')";
+					$sql ="INSERT INTO organizacion( Rfc, Nombre, Domicilio, Titular, Telefono, Correo, Estado, Curptitular) 
+					VALUES ('".$txtRFC."','".utf8_decode($txtNombre)."','".utf8_decode($txtDomicilio)."','".utf8_decode($txtTitular)."','".$txtTelefono."','".$txtEmail."','".$rbnEstado."','".$txtCurptitular."')";
+					break;
+				case 'inscribirorganizacion':
+					$sql ="INSERT INTO historial_organizacion( programa_Idprograma, organizacion_Rfc, Fecha_inicio, Conclusion) 
+					VALUES ('".$selPrograma."','".$selOrganizacion."','".date("Y-m-d ")."', '0')";
+					break;
+				case 'inscribirbeneficiario':
+					$sql ="INSERT INTO historial_beneficiario( programa_Idprograma, beneficiario_Curp, Fecha_inicio, Conclusion) 
+					VALUES ('".$selPrograma."','".$selBeneficiario."','".date("Y-m-d ")."', '0')";
 					break;
 				default:
 					break;
@@ -166,7 +175,13 @@
 					$sql = "SELECT Idprograma, Nombre, Responsable, Poblacion_objetivo, Sector, Anio_inicio, Iddependecia, Convocatoria FROM programa";
 					break;
 				case 'selectdependencia':
-					$sql = "SELECT Iddependecia, Nombre, Direccion, Telefono, Responsable, Correo FROM dependencia WHERE 1";
+					$sql = "SELECT Iddependecia, Nombre, Direccion, Telefono, Responsable, Correo FROM dependencia";
+					break;
+				case 'selectorganizacion':
+					$sql = "SELECT Rfc, Nombre, Domicilio, Titular, Telefono, Correo, Estado, Curptitular FROM organizacion";
+					break;
+				case 'selectbeneficiario':
+					$sql = "SELECT Rfc, Curp, Nombre, Apellidos, Domicilio, Telefonos, Correo, Estado FROM beneficiario";
 					break;
 				default:
 					break;

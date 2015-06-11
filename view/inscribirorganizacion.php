@@ -1,3 +1,27 @@
+<?php 
+    require_once "../classes/classuser.php";
+    $dependencia = new Generica();
+    $var = $dependencia->selectMethod("selectprograma");
+    $var2 = $dependencia->selectMethod("selectorganizacion");
+
+    // Retorna valores get
+    $retVal = (isset($_GET['act'])) ? $_GET['act'] : '' ;
+    if ($retVal == 'ok') {
+      ?>
+      <script type="text/javascript">
+        alert('Organizacion inscrita');
+      </script>
+      <?php
+    }
+    elseif ($retVal == 'error')
+    {
+      ?>
+      <script type="text/javascript">
+        alert('Error al insertar los datos. ya se encuentra registrado');
+      </script>
+      <?php  
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,65 +77,46 @@
     <li><a href="about.php">Acerca de</a></li>
     </ul>
   </nav>
-</div>
+  </div>
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
-	<div style="margin: 0 auto;">
-<!-- Form Name -->
-<legend>Modificar datos de la Organización</legend>
-<form class="form-horizontal">
-<!-- Text input-->
+<h2 class="title">Inscribir Organización a un Programa</h2>
+<form class="form-horizontal" method="post" action="../controllers/controladorinscribirorganizacion.php">
+
+<!-- Select Basic -->
 <div class="control-group">
-  <label class="control-label" for="rfc">RFC</label>
+  <label class="control-label" for="selPrograma">Programa</label>
   <div class="controls">
-    <input id="rfc" name="txtRfc" readonly class="input-xlarge" type="text" required="">
-    
+    <select id="selPrograma" name="selPrograma" class="input-xlarge">
+      <option>Selecciona programa</option>
+      <?php
+        foreach ($var as $key) {
+          # code...
+      ?>
+      <option value="<?php echo $key['Idprograma'];?>"><?php echo utf8_encode($key['Nombre']);?></option>
+      <?php
+       }
+      ?>
+    </select>
   </div>
 </div>
 
-<!-- Text input-->
+<!-- Select Basic -->
 <div class="control-group">
-  <label class="control-label" for="nombreorganizacion">Nombre</label>
+  <label class="control-label" for="selOrganizacion">Organización</label>
   <div class="controls">
-    <input id="nombreorganizacion" name="txtNombre" class="input-xlarge" type="text" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="domicilio">Domicilio</label>
-  <div class="controls">
-    <input id="domicilio" name="txtDomicilio" class="input-xlarge" type="text" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="titular">Titular </label>
-  <div class="controls">
-    <input id="titular" name="txtTitular" class="input-xlarge" type="text" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="telefono">Teléfono</label>
-  <div class="controls">
-    <input id="telefono" name="txtTelefono" class="input-xlarge" type="text">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="correo">e-mail</label>
-  <div class="controls">
-    <input id="correo" name="txtCorreo" class="input-xlarge" type="text">
-    
+    <select id="selOrganizacion" name="selOrganizacion" class="input-xlarge">
+      <option>Selecciona organización</option>
+      <?php
+        foreach ($var2 as $key) {
+          # code...
+      ?>
+      <option value="<?php echo $key['Rfc'];?>"><?php echo utf8_encode($key['Nombre']);?></option>
+      <?php
+       }
+      ?>
+    </select>
   </div>
 </div>
 
@@ -119,14 +124,15 @@
 <div class="control-group">
   <label class="control-label" for="add"></label>
   <div class="controls">
-    <button id="add" name="btnModificar" class="btn btn-primary">Modificar</button>
+    <button id="add" name="btnRegistrar" class="btn btn-success">Registrar</button>
     <button id="cancel" name="btnCancelar" class="btn btn-danger">Cancelar</button>
   </div>
 </div>
-	</div>
+  <input type="hidden" name="bandera" id="bandera" value="inscribirorganizacion">
+  <input type="hidden" name="banderatipo" id="banderatipo" value="alta">
+	</form>
 </div>
 </div>
-</form>
 <div class="right-panel">
 <div class="right-panel-in">
 <h3>Áreas General</h3>

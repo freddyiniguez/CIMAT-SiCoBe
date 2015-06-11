@@ -8,9 +8,12 @@
 		$dependencia = new Generica();
 		switch ($tipoTransaccion) {
 			case 'alta':
-				$add = $dependencia->getValid($_POST, "add");
+				 $add = $dependencia->getValid($_POST, "add");
 				if($add == 'true'){
-					header("Location: ../view/registraraniofiscal.php?act=ok");
+					header("Location: ../view/inscribirorganizacion.php?act=ok");
+				}
+				else{
+					header("Location: ../view/inscribirorganizacion.php?act=error");
 				}
 				break;
 			case 'modificar':

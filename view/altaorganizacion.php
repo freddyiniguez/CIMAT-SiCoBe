@@ -1,3 +1,14 @@
+<?php 
+    // Retorna valores get
+    $retVal = (isset($_GET['act'])) ? $_GET['act'] : '' ;
+    if ($retVal == 'ok') {
+      ?>
+      <script type="text/javascript">
+        alert('Organización agregada correctamente');
+      </script>
+      <?php
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,6 +54,8 @@
       <ul class="fallback">
         <li><a href="altaorganizacion.php">Agregar organización</a></li>
         <li><a href="altabeneficiario.php">Agregar beneficiario</a></li>
+        <li><a href="inscribirorganizacion.php">Inscribir organización</a></li>
+        <li><a href="inscribirbeneficiario.php">Inscribir beneficiario</a></li>
         <li><a href="modificarorganizacion.php">Modificar organización</a></li>
         <li><a href="modificarbeneficiario.php">Modificar beneficiario</a></li>
         <li><a href="consultarbeneficiario.php">Consultar</a></li>
@@ -58,6 +71,8 @@
 <h2 class="title">Alta de Organización</h2>
 
 <form class="form-horizontal" method="post" action="../controllers/controladororganizacion.php">
+<br>
+
 <!-- Text input-->
 <div class="control-group">
   <label class="control-label" for="txtRFC">RFC</label>
@@ -90,7 +105,14 @@
   <label class="control-label" for="txtTitular">Titular</label>
   <div class="controls">
     <input id="txtTitular" name="txtTitular" type="text" class="input-large" required="">
-    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txtCurptitular">CURP del Titular</label>
+  <div class="controls">
+    <input id="txtCurptitular" name="txtCurptitular" type="text" class="input-large" required="">
   </div>
 </div>
 

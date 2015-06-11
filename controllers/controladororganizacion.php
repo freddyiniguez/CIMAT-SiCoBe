@@ -8,7 +8,11 @@
 		$dependencia = new Generica();
 		switch ($tipoTransaccion) {
 			case 'alta':
-				echo $add = $dependencia->getValid($_POST, "add");
+				//echo $add = $dependencia->getValid($_POST, "add"); exit;
+				$add = $dependencia->getValid($_POST, "add");
+				if($add == 'true'){
+					header("Location: ../view/altaorganizacion.php?act=ok");
+				}
 				break;
 			case 'modificar':
 				echo $add = $dependencia->getValid($_POST, "mod");

@@ -54,6 +54,8 @@
       <ul class="fallback">
         <li><a href="altaorganizacion.php">Agregar organización</a></li>
         <li><a href="altabeneficiario.php">Agregar beneficiario</a></li>
+        <li><a href="inscribirorganizacion.php">Inscribir organización</a></li>
+        <li><a href="inscribirbeneficiario.php">Inscribir beneficiario</a></li>
         <li><a href="modificarorganizacion.php">Modificar organización</a></li>
         <li><a href="modificarbeneficiario.php">Modificar beneficiario</a></li>
         <li><a href="consultarbeneficiario.php">Consultar</a></li>
