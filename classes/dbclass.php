@@ -3,10 +3,10 @@
 	* clase de conexion a la base de datos
 	* definimos constantes de conexion
 	*/
-	define('DBHOST', 'localhost');
-	define('DBUSER', 'root');
-	define('DBPASS', 'SQl11386703.');
-	define('DBNAME', 'mydb');
+	define('DBHOST', '<host>');
+	define('DBUSER', '<user>');
+	define('DBPASS', '<password>');
+	define('DBNAME', '<database>');
 	define('DBCHARSET', 'utf-8');
 
 	class Dbclass 
