@@ -8,4 +8,4 @@ De tal manera, el principal objetivo de SiCoBe es poder identificar a los benefi
 Toda la información mostrada se encuentra regulada por la [Ley Federal de Protección de Datos Personales en Posesión de lo Particulares](http://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf).
 
 ## Instalación
-***SiCoBe** es una propuesta de software libre, utiliza el stack LAMP *** (Linux, Apache, MySQL y PHP) *** de manera que para concretar su instalación deberá configurar su servidor Apache en una distribución Linux, configurar las credenciales para la conexión de la base de datos (que vienen explícitas en el archivo /classes/dbclass.php) y posteriormente ubicar SiCoBe en la dirección del servidor web.
+**SiCoBe** es una propuesta de software libre, utiliza el stack LAMP ***(Linux, Apache, MySQL y PHP)*** de manera que para concretar su instalación deberá configurar su servidor Apache en una distribución Linux, configurar las credenciales para la conexión de la base de datos (que vienen explícitas en el archivo /classes/dbclass.php) y posteriormente ubicar SiCoBe en la dirección del servidor web.
